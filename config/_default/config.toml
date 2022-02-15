@@ -1,0 +1,42 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "NetKet"
+
+[params]
+slogan = "The Machine Learning Toolbox for Quantum Physics"
+linksOnlyIcon = true
+navbarLogo = "logo/logonav.png"
+
+[[params.keyfeatures.features]]
+title = "Neural Quantum States"
+text = "NetKet provides state-of-the-art Neural-Network Quantum states, and advanced learning algorithms to study many-body quantum systems."
+
+[[params.keyfeatures.features]]
+title = "Jax-powered"
+text = "Netket is based on Jax, therefore you can run on CPUs, GPUs and TPUs any Neural Network Architecture written in one of the several Jax Frameworks, such as [Flax](https://flax.readthedocs.io/) or [Haiku](https://github.com/deepmind/dm-haiku)."
+
+[[params.keyfeatures.features]]
+title = "Interoperable"
+text = "NetKet can easily interperate with other tools such as [OpenFermion](https://quantumai.google/openfermion) or [QuTiP](https://qutip.org/)."
+
+[[params.keyfeatures.features]]
+title = "Ground-State"
+text = "NetKet allows you to easily find the ground state or simulate the dynamics of a quantum system."
+
+[[params.keyfeatures.features]]
+title = "Easy to use"
+text = "NumPy's high level syntax makes it accessible and productive for programmers from any background or experience level."
+
+[[params.keyfeatures.features]]
+title = "Open source"
+text = "Distributed under a liberal [BSD license](https://github.com/numpy/numpy/blob/main/LICENSE.txt), NumPy is developed and maintained [publicly on GitHub](https://github.com/numpy/numpy) by a vibrant, responsive, and diverse [community](/community)."
+
+[params.installationWidget]
+title = "INSTALLATION WIDGET"
+
+  [[params.installationWidget.features]]
+  title = "Quality 1"
+  text = "Text on Quality 1"
+
+[markup.goldmark.renderer]
+unsafe = true

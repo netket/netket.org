@@ -1,0 +1,29 @@
+[[main]]
+  identifier = "documentation"
+  name = "Documentation"
+  url = "https://www.netket.org/docs/getting_started.html"
+  weight = 80
+  
+[[main]]
+  identifier = "api"
+  name = "API Reference"
+  url = "https://www.netket.org/docs/api.html"
+  weight = 1000
+
+[[links]]
+  identifier = 'github'
+  pre = "<i class='bi bi-github'></i>"
+  url = "http://www.github.com"
+  weight = 90
+
+[[links]]
+  identifier = 'twitter'
+  pre = "<i class='bi bi-twitter'></i>"
+  url = "https://twitter.com/netketorg"
+  weight = 90
+
+[[links]]
+  identifier = 'slack'
+  pre = "<i class='bi bi-slack'></i>"
+  url = "https://join.slack.com/t/mlquantum/shared_invite/zt-11x4qfoc0-hTge76XqJApq_6vUFmaiYw"
+  weight = 100

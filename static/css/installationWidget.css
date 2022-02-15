@@ -1,0 +1,134 @@
+.installationWidget {
+    margin: 20px;
+}
+
+.installationWidget .container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px 10px 15px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.justify-content-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-width {
+    width: 80%
+}
+
+.flex {
+    display: flex;
+}
+
+.main-heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    letter-spacing: 1.5px;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.description {
+    text-align: center;
+}
+
+.title-block {
+    padding: 31px 16px 29px 16px;
+    margin: 0px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.command-block {
+    margin: 24px 21px 21px 21px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+.command-to-run {
+    margin: 20px 50px 20px 48px;
+}
+
+.title-block {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    border: none;
+    margin: 8px 5px;
+}
+
+.option,
+.command-container {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 3px;
+    margin: 5px 5px;
+    width: 200px;
+}
+
+.option-text {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+
+#command {
+    margin-bottom: 0px;
+}
+
+.selected {
+    background-color: #4d77cf;
+    color: white;
+}
+
+.forced {
+    background-color: #4d77cf !important;
+    background: repeating-linear-gradient(
+      45deg,
+      #4d77cf,
+      #4d77cf 3px,
+      #93a9d7 3px,
+      #93a9d7 13px
+    );
+    color: white;
+}
+
+.disabled,
+.disabled-p {
+    background-color: gray  !important;
+    background: repeating-linear-gradient(
+      45deg,
+      gray,
+      gray 3px,
+      #93a9d7 3px,
+      #93a9d7 13px
+    );
+    color: black  !important;
+}
+
+.option:hover {
+    background-color: #e4edff;
+}
+
+.selected:hover {
+    background-color: #4d77cf;
+    color: white;
+}

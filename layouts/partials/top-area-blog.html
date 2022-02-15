@@ -1,0 +1,19 @@
+{{ $hero := .Params.hero }}
+
+<!-- Hero -->
+<div class="top-area">
+    {{- if $hero.show -}} {{- partial "hero-blog" . -}} {{- else -}}
+    <div class="row">
+        <div class="col">
+            <div class="class text-center">
+                <h1>{{ .Site.Title }}</h1>
+                {{ with .Params.subtitle }}
+                <h2 class="text-secondary h3">{{ . }}</h2>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    {{end}} 
+</div>
+
+<!-- end Hero -->

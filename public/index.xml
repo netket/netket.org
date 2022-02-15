@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on NetKet</title>
+    <link>http://example.org/</link>
+    <description>Recent content in Home on NetKet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Feb 2022 17:48:04 +0100</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://example.org/contact/</link>
+      <pubDate>Tue, 01 Feb 2022 18:02:27 +0100</pubDate>
+      
+      <guid>http://example.org/contact/</guid>
+      <description>Page with informations about contacting contacts.</description>
+    </item>
+    
+  </channel>
+</rss>

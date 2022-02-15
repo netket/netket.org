@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="container">
+    {{- partial "top-area" . -}}
+    
+    <div class="row">
+        <div class="col-lg-4 col-md-3 ecosystem"><hr/></div>
+        <div class="col-lg-4 col-md-6 ecosystem section-heading">
+             <h2 class="lead secondary-heading">Features</h2>
+        </div>
+        <div class="col-lg-4 col-md-3 ecosystem"><hr/></div>
+        <p> NetKet is an open-source project delivering cutting-edge methods for the study of many-body quantum systems with artificial neural networks and machine learning techniques.
+
+
+        <p> 
+        <!-- {{- partial "tabs" . -}} -->
+        {{ if .Site.Params.keyfeatures }}
+        {{ partial "keyfeatures.html" . }}
+        {{ end }}
+    </div>
+
+</div>
+{{ end }}

@@ -1,0 +1,12 @@
+{{ $hero := .Params.hero }}
+{{ $title := $hero.title }}
+{{ $logo := $hero.logo }}
+
+  <div class="bg-full jumbotron container col-xxl-12 px-4 py-5">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+        <p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">{{- $title -}}</p>
+        {{- with $hero.subtitle -}}
+        <p class="h2 lead hero-blog-subtitle">{{- . -}}</p>
+        {{- end -}}
+    </div>
+  </div>

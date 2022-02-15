@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="container">
+{{- partial "top-area" . -}}
+
+{{ .Content }}
+
+{{ if .Params.installationWidget }}
+<div class="row">
+    {{ partial "installationWidget.html" . }}
+</div>
+{{ end }}
+</div>
+{{ end }}

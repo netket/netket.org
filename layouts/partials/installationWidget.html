@@ -1,0 +1,76 @@
+{{- $installationWidget := .Site.Params.installationWidget }}
+<section class="installationWidget">
+    <div class="container">
+        <div><h1 class="main-heading">Quick Start Locally</h1>
+            <p class="description"><br>Select your preferences and run the install command. More text here as needed.</p>
+        </div>
+        <div class="row flex">
+            <div class="col-md-3 headings">
+                <div class="col-md-12 title-block">
+                    <div class="option-text os-text">Your OS</div>
+                </div>
+                <div class="col-md-12 title-block">
+                    <div class="option-text">Package Manager</div>
+                </div>
+                <div class="col-md-12 title-block">
+                    <div class="option-text">Accellerator</div>
+                </div>
+                <div class="col-md-12 title-block">
+                    <div class="option-text">Extras</div>
+                </div>
+                <div class="col-md-12 title-block">
+                    <div class="option-text command-text">Run this Command:</div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div id="os" class="row justify-content-around">
+                    <div id="linux" class="flex-fill option selected">
+                        <div class="option-text">Linux</div>
+                    </div>
+                    <div id="macos" class="flex-fill option">
+                        <div class="option-text">MacOS</div>
+                    </div>
+                    <div id="macos-arm" class="flex-fill option">
+                        <div class="option-text">MacOS ARM</div>
+                    </div>
+                </div>
+                <div id="package" class="row justify-content-around">
+                    <div id="pip" class="flex-fill option selected">
+                        <div class="option-text">Pip</div>
+                    </div>
+                    <div id="conda" class="flex-fill option">
+                        <div class="option-text">Conda</div>
+                    </div>
+                    <div id="source" class="flex-fill option">
+                        <div class="option-text">Git Master</div>
+                    </div>
+                </div>
+                <div id="accellerator" class="row justify-content-around">
+                    <div id="cpu" class="flex-fill option accellerator selected">
+                        <div class="option-text">CPU</div>
+                    </div>
+                    <div id="gpu" class="flex-fill option accellerator">
+                        <div class="option-text">CPU/GPU</div>
+                    </div>
+                </div>
+                <div id="extras" class="row justify-content-around">
+                    <div id="mpi" class="flex-fill option extra-opt">
+                        <div class="option-text">MPI</div>
+                    </div>
+                    <div id="qutip" class="flex-fill option extra-opt">
+                        <div class="option-text">QuTiP</div>
+                    </div>
+                    <div id="openfermion" class="flex-fill option extra-opt">
+                        <div class="option-text">OpenFermion</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="command-container flex-fill">
+                      <div class="col-md-11 command-to-run"><pre id="command">conda install windows 3.7</pre></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

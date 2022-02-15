@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-sm fixed-top bd-navbar flex-md navbar-dark bg-light">
+    <div class="container">
+        <a class="navbar-brand navbar-custom-brand" href="/">
+      {{- with .Site.Params.navbarLogo -}}
+      <img class="navbar-brand-logo d-inline-block align-center" src="{{ printf "%s" . | relURL }}" width="30" height="30">
+      {{- end -}}
+      <div class="navbar-brand-text d-inline-block align-center">
+      {{- .Site.Title -}}
+      </div>
+    </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a class="nav-link {{ if $.IsMenuCurrent " main " . }} active" aria-current="page{{ end }}" href="{{ .URL }}">
+                      {{ .Pre }}
+                      {{ .Name }}
+                      {{ .Post }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+            <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                {{ range .Site.Menus.links }}
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{ .URL }}"> 
+                    {{- if .Params.linksOnlyIcon -}}
+                      {{- .Pre -}}
+                    {{- else -}}
+                      {{ .Pre }}
+                      {{ .Name }}
+                    {{ .Post }}  
+                    {{- end -}}
+                  </a>
+                </li>
+                {{ end }}
+            </ul>
+
+            <!-- Download button -->
+            <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ms-md-3" href="htps://github.com/twbs/icons/archivet/v1.8.0.zip">
+                Install
+            </a>
+            <!-- Search form-->
+            <!--
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      -->
+        </div>
+    </div>
+</nav>
