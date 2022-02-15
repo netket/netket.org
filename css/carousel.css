@@ -1,0 +1,42 @@
+
+.carousel {
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+    transform: translate(0%, -50%);
+
+}
+
+.carousel-caption {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    position: static;
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+
+.carousel-caption p {
+    box-sizing: border-box;
+    position: static;
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+
+.carousel-caption p:hover {
+    color: #ee4c2c;
+}
+
+.carousel-item {
+    background-color: black;
+    white-space: nowrap;
+    font-size: 1.125rem;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+
+.carousel-indicators {
+    margin-bottom: 0;
+}

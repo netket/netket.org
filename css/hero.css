@@ -1,0 +1,61 @@
+.hero-main {
+    border-radius: 30px;
+    background-color: rgb(153,204,204);
+}
+
+.hero-title {
+     font-variant: small-caps;
+     font-weight: 200;
+     font-size: 6em;
+     color: rgb(44,62,80);
+     overflow-x: visible;
+     white-space: nowrap;
+}
+
+.hero-subtitle {
+     font-variant: small-caps;
+     color: rgb(44,62,80);
+     font-weight: 300;
+}
+
+
+.hero-blog-title {
+     font-variant: small-caps;
+     font-weight: 200;
+     font-size: 3em;
+     color: rgb(44,62,80);
+     overflow-x: visible;
+}
+
+.hero-blog-subtitle {
+     font-variant: small-caps;
+     color: rgb(44,62,80);
+     font-weight: 300;
+}
+
+.top-area {
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    width: 80%;
+    background-color: rgb(153,204,204);
+    color: rgb(33, 37, 41);
+    font-family: Lato;
+}
+
+.bg-full {
+  position: relative;
+}
+
+.bg-full:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX( -50%);
+  height: 100%;
+  width: 100vw;
+  z-index: -100;
+  background: rgb(153,204,204);
+}
