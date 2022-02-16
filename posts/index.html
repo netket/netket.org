@@ -8,13 +8,12 @@
 <link rel=stylesheet href=/css/carousel.css>
 <link rel=stylesheet href=/css/hero.css>
 <link rel=stylesheet href=/css/keyfeatures.css>
-<link rel=stylesheet href=/css/installationWidget.css>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css>
 <title>Posts - NetKet</title></head>
 <body>
 <nav class="navbar navbar-top navbar-expand-sm fixed-top bd-navbar flex-md navbar-dark bg-light">
 <div class=container>
-<a class="navbar-brand navbar-custom-brand" href=/><img class="navbar-brand-logo d-inline-block align-center" src=/logo/logonav.png width=30 height=30><div class="navbar-brand-text d-inline-block align-center">NetKet</div>
+<a class="navbar-brand navbar-custom-brand" href=/><img class="navbar-brand-logo d-inline-block align-center" src=/logo/logonav.png loading=lazy><div class="navbar-brand-text d-inline-block align-center">NetKet</div>
 </a>
 <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
 <span class=navbar-toggler-icon></span>
@@ -37,34 +36,28 @@ Posts
 </a>
 </li>
 <li class=nav-item>
-<a class=nav-link href=https://www.netket.org/docs/getting_started.html>
+<a class=nav-link href=https://netket.readthedocs.io/en/latest/index.html>
 Documentation
 </a>
 </li>
 <li class=nav-item>
-<a class=nav-link href=https://www.netket.org/docs/api.html>
+<a class=nav-link href=https://netket.readthedocs.io/en/latest/api/api.html>
 API Reference
 </a>
 </li>
 </ul>
 <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
 <li class=nav-item>
-<a class=nav-link aria-current=page href=http://www.github.com/netket/netket><i class="bi bi-github"></i>
-</a>
+<a class=nav-link aria-current=page href=http://www.github.com/netket/netket><i class="bi bi-github"></i></a>
 </li>
 <li class=nav-item>
-<a class=nav-link aria-current=page href=https://twitter.com/netketorg><i class="bi bi-twitter"></i>
-</a>
+<a class=nav-link aria-current=page href=https://twitter.com/netketorg><i class="bi bi-twitter"></i></a>
 </li>
 <li class=nav-item>
-<a class=nav-link aria-current=page href=https://join.slack.com/t/mlquantum/shared_invite/zt-11x4qfoc0-hTge76XqJApq_6vUFmaiYw><i class="bi bi-slack"></i>
-</a>
+<a class=nav-link aria-current=page href=https://join.slack.com/t/mlquantum/shared_invite/zt-11x4qfoc0-hTge76XqJApq_6vUFmaiYw><i class="bi bi-slack"></i></a>
 </li>
 </ul>
-<a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ms-md-3" href=htps://github.com/twbs/icons/archivet/v1.8.0.zip>
-Install
-</a>
-</div>
+<a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ms-md-3" href=/get_started>Install</a></div>
 </div>
 </nav>
 <div id=content-wrap>
@@ -73,14 +66,11 @@ Install
 <div class="bg-full jumbotron container col-xxl-12 px-4 py-5">
 <div class="row flex-lg-row align-items-center g-5 py-5">
 <div class=col-lg-6>
-<p class="h1 display-5 fw-bold lh-1 mb-3 hero-title">The Blog</p>
+<h1 class="h1 display-5 fw-bold lh-1 mb-3 hero-title">The Blog</h1>
 <p class="h2 lead hero-subtitle">Our blog discusses new releases, conferences and schools related to our software, as well as numerical and technical issues.</p>
-<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-<button type=button class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-<button type=button class="btn btn-outline-secondary btn-lg px-4">Default</button>
+<div class="d-grid gap-2 d-md-flex justify-content-md-start"></div>
 </div>
-</div>
-<div class="col-10 col-sm-8 col-lg-6 d-none d-lg-block"><img src=/logo/logo_transparent.png class="d-block mx-lg-auto img-fluid" alt=NetKet width=700 height=500 loading=lazy></div>
+<div class="col-10 col-sm-8 col-lg-6 d-none d-lg-block"><img src=/logo/logo_transparent.png class="d-block mx-lg-auto img-fluid hero-logo" alt=NetKet loading=lazy></div>
 </div>
 </div>
 <div id=myCarousel class="carousel slide" data-bs-ride=carousel>
@@ -93,7 +83,7 @@ Install
 <div class=container>
 <div class="carousel-caption text-start">
 <a href=/posts/02-toulouse/>
-<p>NetKet-friendly Summer School in Toulouse</p>
+NetKet-friendly Summer School in Toulouse
 </a>
 </div>
 </div>
@@ -102,7 +92,7 @@ Install
 <div class=container>
 <div class="carousel-caption text-start">
 <a href=/posts/01-welcome/>
-<p>Redesigned Website</p>
+Redesigned Website
 </a>
 </div>
 </div>
@@ -118,7 +108,7 @@ Install
 </button>
 </div></div>
 <div class="row justify-content-center">
-<div class="col col-sm-7">
+<div class="col col-sm-9">
 <article class=blog-post>
 <header>
 <h2 class=blog-post-title>
@@ -128,13 +118,13 @@ Install
 <time datetime=2022-02-14>Feb 14, 2022</time>
 </div>
 </header>
-We are glad to advertise that our dear colleagues in Toulouse are organising a Summer school in April on Machine Learning techniques for Quantum Many-Body Physics. The school will feature several lectures and tutorials on NetKet. On
+<div class=blog-post-content>We are glad to advertise that our dear colleagues in Toulouse are organising a Summer school in April on Machine Learning techniques for Quantum Many-Body Physics. The school will feature several lectures and tutorials on NetKet. On
 Below you can find the original announcement.
 Announcement Toulouse School on Machine Learning for Quantum Many-Body Physics
 that will take place in Toulouse, France (4th-8th April 2022).
-The school will take place in hybrid format (with both online and onsite students and lecturers).
+The school will take place in hybrid format (with both online and onsite students and lecturers)....
 <p></p>
-<a href=/posts/02-toulouse/></a>
+<a href=/posts/02-toulouse/>readMore</a></div>
 </article>
 <article class=blog-post>
 <header>
@@ -146,10 +136,7 @@ The school will take place in hybrid format (with both online and onsite student
 <span rel=author>Filippo Vicentini</span>
 </div>
 </header>
-lorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum dolorem
-lorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum dolorem
-<p></p>
-<a href=/posts/01-welcome/></a>
+<div class=blog-post-content>It&rsquo;s lovely, ain&rsquo;t it?</div>
 </article>
 </div>
 </div>
@@ -161,10 +148,7 @@ lorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlore
 <p> © Copyright 2019-2022, The Netket authors - All rights reserved.</p>
 </div>
 </footer>
-<script src=https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js integrity=sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM crossorigin=anonymous></script>
 <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js integrity=sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p crossorigin=anonymous></script>
 <script src=/js/main.js></script>
-<script src=/js/app.js></script>
-<script src=/js/installationWidget.js></script>
 </body>
 </html>

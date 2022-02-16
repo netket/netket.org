@@ -14,17 +14,26 @@
     display: inline-block;
     color: white;
     text-align: center;
+
+    margin: auto;
+    width: 80%;
 }
 
-.carousel-caption p {
+.carousel-caption a {
+    box-sizing: border-box;
+    width: 100%;
     box-sizing: border-box;
     position: static;
     display: inline-block;
     color: white;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
 }
 
-.carousel-caption p:hover {
+.carousel-caption a:hover {
     color: #ee4c2c;
 }
 
