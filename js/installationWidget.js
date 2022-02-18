@@ -67,7 +67,7 @@ updateCommand = () => {
    var pkg_name = "netket";
    switch(packageId) {
         case 'source':
-            pkg_name = "'git+https://github.com/netket/netket.git#egg=netket[all]'";
+            pkg_name = "git+https://github.com/netket/netket.git#egg=netket";
             break;
         default:
         break
