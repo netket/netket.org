@@ -4,7 +4,6 @@
 
 .hero-title, 
 .hero-blog-title {
-     font-variant: small-caps;
      font-weight: bold;
      color: rgb(44,62,80);
 }

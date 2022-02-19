@@ -20,7 +20,7 @@
 <link rel=stylesheet href=/css/hero.css>
 <link rel=stylesheet href=/css/keyfeatures.css>
 <title>Get Involved - NetKet</title>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Get Involved","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/netket.org\/get_involved\/"},"image":{"@type":"ImageObject","url":"http:\/\/netket.org\/logo\/logo_transparent.png","width":800,"height":600},"genre":"page","wordcount":606,"url":"http:\/\/netket.org\/get_involved\/","datePublished":"2022-02-01T18:02:27\u002b01:00","dateModified":"2022-02-01T18:02:27\u002b01:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini and Giuseppe Carleo"},"description":""}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Get Involved","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/netket.org\/get_involved\/"},"image":{"@type":"ImageObject","url":"http:\/\/netket.org\/logo\/logo_transparent.png","width":800,"height":600},"genre":"page","wordcount":838,"url":"http:\/\/netket.org\/get_involved\/","datePublished":"2022-02-01T18:02:27\u002b01:00","dateModified":"2022-02-01T18:02:27\u002b01:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini and Giuseppe Carleo"},"description":""}</script>
 </head>
 <body>
 <nav class="navbar navbar-top navbar-expand-sm fixed-top bd-navbar flex-md navbar-dark bg-light">
@@ -145,18 +145,35 @@ Senior master students in Math/Physics/Computer science or Doctoral students are
 <p>Even if the Time-Dependent Variational Principle can be used to perform the time-evolution of Neural Quantum States already solving an explicit first order equation.
 However, in some cases implicit algorithms such as those proposed in <a href=https://arxiv.org/abs/1912.08831>ArXiV:1912.08831</a> might be more stable.
 This project would see the partecipant implement functions to optimise the overlap (fidelity) between two states, and use this routine to perform the time evolution according to a first and/or second order implicit equation.</p>
-<p>Reccomended Skills: Background knowledge in machine learning, numerical analysis and monte carlo methods.</p>
+<p>Reccomended Skills: Background knowledge in machine learning, numerical analysis and monte carlo methods. Knowledge of Jax.</p>
 <p>Expected Results: Implement an implicit-time evolution algorithm</p>
+<p>Project Length: 175 hours (can be extended if the candidate wishes to)</p>
 <p>Mentors: Filippo Vicentini (@PhilipVinc), Damian Hoffmann (@femtobit)</p>
-<h2 id=implement-quantum-tomography-methods>Implement Quantum Tomography methods</h2>
-<p>Quantum</p>
+<h2 id=implement-tensor-network-ansatze-with-netket>Implement Tensor-Network ansatze with NetKet</h2>
+<p>Tensor Network techniques such as MPS are very estabilished in the numerical community.
+While for 1-Dimensional systems it is possible to perform computations exactly and there is no need to perform Monte-Carlo sampling, in higher dimensions this is a viable option.
+This project would see the candidate implementing Tensor Network (MPS and PEPS) functionalities with NetKet, possibly by integrating with existing Jax libraries such as <a href=https://github.com/google/TensorNetwork>Google&rsquo;s TensorNetwork</a>.</p>
+<p>Reccomended Skills: Basic knowledge of tensor network and monte carlo methods. Knowledge of Jax.</p>
+<p>Expected Results: Implement MPS with NetKet</p>
+<p>Project Length: 175 hours (can be extended to work on PEPS too)</p>
+<p>Mentors: Filippo Vicentini (@PhilipVinc)</p>
 <h2 id=improve-ode-functionality>Improve ODE functionality</h2>
 <p>The Time-Dependent Variational Principle can be used to perform the time-evolution of Neural Quantum States already solving an explicit first order equation.
 However, in some cases implicit algorithms such as those proposed in <a href=https://arxiv.org/abs/1912.08831>ArXiV:1912.08831</a> might be more stable.
 This project would see the partecipant implement functions to optimise the overlap (fidelity) between two states, and use this routine to perform the time evolution according to a first and/or second order implicit equation.</p>
 <p>Reccomended Skills: Background knowledge in machine learning, numerical analysis and monte carlo methods.</p>
 <p>Expected Results: Implement an implicit-time evolution algorithm</p>
+<p>Project Length: 175 hours.</p>
 <p>Mentors: Filippo Vicentini (@PhilipVinc), Damian Hoffmann (@femtobit)</p>
+<h2 id=make-netket-fully-differentiable>Make NetKet fully differentiable</h2>
+<p>Right now NetKet provides some high-level objects which cannot be differentiated.
+We would like to make NetKet fully differentiable with <code>jax.grad</code>.
+Examples of this are our operators, which can only be indexed with Numba from outside NetKet, or our variational states, which perform some operations outside of a Jax context.
+The first step in this project would be designing an API to make our operators Jax-friendly while maintaining backward compatibility, and then devising a way to make our high-level API differentiable.</p>
+<p>Reccomended Skills: Familiarity with Jax and data structure design.</p>
+<p>Expected Results: high-level API (<code>expect</code>) must be differentiable.</p>
+<p>Project Length: 175 hours.</p>
+<p>Mentors: Filippo Vicentini (@PhilipVinc)</p>
 </div>
 </div>
 </div>
