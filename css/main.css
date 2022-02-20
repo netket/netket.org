@@ -1,4 +1,21 @@
 
+/* Give background to the whole x axis */
+.bg-full {
+  position: relative;
+}
+
+.bg-full:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX( -50%);
+  height: 100%;
+  width: 100vw;
+  z-index: -100;
+  background: rgb(153,204,204);
+}
+
 .ecosystem {
     text-align: center;
     color: #red;

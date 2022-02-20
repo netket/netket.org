@@ -1,10 +1,21 @@
 
 .carousel {
-    background-color: black;
+    background-color: #C3423F;
     margin: 0 auto;
-    position: relative;
-    transform: translate(0%, -50%);
+    /*position: relative;
+    transform: translate(0%, -50%);*/
+}
 
+.carousel.bg-full:before {
+  background-color: #C3423F;
+}
+
+/* Override the inner width so that content 
+   does not go under the arrows */
+.carousel-inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .carousel-caption {
@@ -38,7 +49,6 @@
 }
 
 .carousel-item {
-    background-color: black;
     white-space: nowrap;
     font-size: 1.125rem;
     text-align: center;
