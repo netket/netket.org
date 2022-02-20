@@ -1,15 +1,11 @@
 .hero-main {
-}
-
-.jumbotron.bg-full:before {
-  background: rgb(153,204,204);
+    background-color: rgb(153,204,204);
 }
 
 .hero-title, 
 .hero-blog-title {
     font-weight: bold;
     color: rgb(44,62,80);
-    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 .hero-title {
@@ -37,11 +33,11 @@
 
 
 .hero-subtitle {
-     font-variant: small-caps;
-     color: rgb(44,62,80);
-     font-weight: bold;
+    /*font-variant: small-caps;*/
+    color: rgb(44,62,80);
+    font-weight: bold;
     text-align: justify;
-    text-justify: inter-word;
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 img.hero-logo {
@@ -63,6 +59,22 @@ img.hero-logo {
     background-color: rgb(153,204,204);
     color: rgb(33, 37, 41);
     font-family: "Lato" !important;
+}
+
+.bg-full {
+  position: relative;
+}
+
+.bg-full:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX( -50%);
+  height: 100%;
+  width: 100vw;
+  z-index: -100;
+  background: rgb(153,204,204);
 }
 
 .btn-hero {
