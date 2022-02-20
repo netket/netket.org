@@ -9,15 +9,19 @@
 }
 
 .hero-title {
-     font-size: 6em;
-     white-space: nowrap;
+    font-size: 6em;
+    white-space: nowrap;
 }
 
 .hero-blog-title {
      font-size: 3em;
 }
 
-
+@media(max-width: 1200px) {
+  .hero-title {
+    white-space: normal;
+  }
+}
 
 @media(max-width: 480px) {
   .hero-title {
@@ -41,7 +45,7 @@
 }
 
 img.hero-logo {
-    max-height: 250px;
+    max-height: 300px;
 }
 
 .hero-blog-subtitle {
