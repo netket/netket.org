@@ -1,3 +1,6 @@
+body {
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
 
 /* Give background to the whole x axis */
 .bg-full {
@@ -22,7 +25,6 @@
 }
 
 .section-heading .lead {
-    font-family: "Roboto",sans-serif;
     font-weight: 700;
     font-size: 28px;
 }
