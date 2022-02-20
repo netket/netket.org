@@ -1,0 +1,68 @@
+.card {
+  border-radius: 0.5rem;
+}
+
+
+details.dropdown .summary-title {
+  padding-right: 3em !important;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+details.dropdown:hover {
+  cursor: pointer;
+}
+details.dropdown .summary-content {
+  cursor: default;
+}
+details.dropdown summary {
+  list-style: none;
+  padding: 1em;
+}
+details.dropdown summary .octicon.no-title {
+  vertical-align: middle;
+}
+details.dropdown[open] summary .octicon.no-title {
+  visibility: hidden;
+}
+details.dropdown summary::-webkit-details-marker {
+  display: none;
+}
+details.dropdown summary:focus {
+  outline: none;
+}
+details.dropdown summary:hover .summary-up svg,
+details.dropdown summary:hover .summary-down svg {
+  opacity: 1;
+}
+details.dropdown .summary-up svg,
+details.dropdown .summary-down svg {
+  display: block;
+  opacity: 0.6;
+}
+details.dropdown .summary-up,
+details.dropdown .summary-down {
+  pointer-events: none;
+  position: absolute;
+  right: 1em;
+  top: 0.75em;
+}
+details.dropdown[open] .summary-down {
+  visibility: hidden;
+}
+details.dropdown:not([open]) .summary-up {
+  visibility: hidden;
+}
+details.dropdown.fade-in[open] summary ~ * {
+  -moz-animation: panels-fade-in 0.5s ease-in-out;
+  -webkit-animation: panels-fade-in 0.5s ease-in-out;
+  animation: panels-fade-in 0.5s ease-in-out;
+}
+details.dropdown.fade-in-slide-down[open] summary ~ * {
+  -moz-animation: panels-fade-in 0.5s ease-in-out,
+    panels-slide-down 0.5s ease-in-out;
+  -webkit-animation: panels-fade-in 0.5s ease-in-out,
+    panels-slide-down 0.5s ease-in-out;
+  animation: panels-fade-in 0.5s ease-in-out, panels-slide-down 0.5s ease-in-out;
+}
