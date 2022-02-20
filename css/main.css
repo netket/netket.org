@@ -32,11 +32,20 @@ body {
 .section-heading h2 {
     margin-bottom: 2rem;
 }
-.page-content > h1 {
+.page-content > h1
+{
     margin-top: 2rem;
 }
 .page-content > h1:first-child {
     margin-top: 0rem;
+}
+
+.page-content > h2
+{
+    margin-top: 1.5rem;
+}
+.page-content > h2:first-child {
+    margin-top: 0.5rem;
 }
 
 
