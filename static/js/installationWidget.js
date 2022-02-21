@@ -67,7 +67,7 @@ updateCommand = () => {
    var pkg_name = "netket";
    switch(packageId) {
         case 'source':
-            pkg_name = "'git+https://github.com/netket/netket.git#egg=netket[all]'";
+            pkg_name = "git+https://github.com/netket/netket.git#egg=netket";
             break;
         default:
         break
@@ -87,6 +87,7 @@ updateCommand = () => {
                     pip install --upgrade ${acc_string} '${pkg_name}${extras_variants}' ${extra_packages}
                     `.replace(/ +(?= )/g,'');
                     break;
+                case 'macos':
                 case 'linux':
                     document.getElementById("command").innerHTML = `
                     pip install --upgrade pip
@@ -123,6 +124,7 @@ for (var i = 0; i < osOptions.length; i++) {
         case 'macos':
         case 'macos-arm':
             document.getElementById("gpu").classList.add("disabled");
+            document.getElementById("gpu").classList.remove("selected");
             document.getElementById("cpu").classList.add("selected");
             break;
     }

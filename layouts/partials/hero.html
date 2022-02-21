@@ -3,21 +3,24 @@
 {{ $subtitle := $hero.subtitle }}
 {{ $logo := $hero.logo }}
 
-  <div class="bg-full jumbotron container col-xxl-12 px-4 py-5">
-    <div class="row flex-lg-row align-items-center g-5 py-5">
-      <div class="col-lg-6">
-        <p class="h1 display-5 fw-bold lh-1 mb-3 hero-title">{{- $title -}}</p>
-        <p class="h2 lead hero-subtitle">{{- $subtitle -}}</p>
+  <div class="bg-full jumbotron container col-xxl-12 px-4 py-2">
+    <div class="row flex-lg-row align-items-center g-2 pt-4 pb-4">
+      <div class="col-12 col-lg-8 pt-1">
+        <h1 class="h1 display-5 fw-bold lh-1 mb-3 hero-title">{{- $title -}}</h1>
+        <p class="h2 lead hero-subtitle pr-2">{{- $subtitle -}}</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          {{- with $hero.button -}}
+          <!-- This button can't be an <a> alone because safari won't render it.-->
+          <a href="{{- .URL -}}">
+            <button type="button" class="btn btn-hero btn-primary btn-lg px-4 me-md-2" href="{{- .URL -}}">{{- .text -}}</button>
+          </a>
+          {{- end -}}
         </div>
       </div>
-      <div class="col-10 col-sm-8 col-lg-6 d-none d-lg-block">
+      <div class="col-0 col-lg-3 d-none d-lg-block mx-0 px-2 py-3">
         {{- with $logo -}}
-        <img src="{{ printf "%s" . | relURL }}" class="d-block mx-lg-auto img-fluid" alt="NetKet" width="700" height="500" loading="lazy">
+        <img src="{{ printf "%s" . | absURL }}" class="d-block  img-fluid hero-logo" alt="NetKet" loading="lazy">
         {{- end -}}
       </div>
-
     </div>
   </div>

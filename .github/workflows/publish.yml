@@ -1,0 +1,48 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master # only trigger deployment upon pushes to main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true  # Fetch Hugo themes (true OR recursive)
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+    - name: Setup hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: "0.92.2"
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Build
+      # remove --minify tag if you do not need it
+      # docs: https://gohugo.io/hugo-pipes/minification/
+      run: hugo --minify
+
+    # Create an artifact of the html output.
+    - uses: actions/upload-artifact@v1
+      with:
+        name: Website
+        path: ./public
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        publish_branch: gh-pages
+        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        # external_repository: <username>/<username>.github.io
+        publish_dir: ./public
+        enable_jekyll: false
+        # keep_files: true
+        # cname: www.netket.org
+        # user_name: <username>
+        # user_email: <username@email.com>

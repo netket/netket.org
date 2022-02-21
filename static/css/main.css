@@ -1,66 +1,8 @@
-.btn-bd-download {
-    font-weight: 600;
-    color: #ffe484;
-    border-color: #ffe484
+body {
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
-.btn-bd-download:hover,
-.btn-bd-download:active {
-    color: #2a2730;
-    background-color: #ffe484;
-    border-color: #ffe484
-}
-
-.btn-bd-download:focus {
-    box-shadow: 0 0 0 3px rgba(255, 228, 132, 0.25)
-}
-
-.hero-main {
-    border-radius: 30px;
-    background-color: rgb(153,204,204);
-}
-
-.hero-title {
-     font-variant: small-caps;
-     font-weight: 200;
-     font-size: 6em;
-     color: rgb(44,62,80);
-     overflow-x: visible;
-     white-space: nowrap;
-}
-
-.hero-subtitle {
-     font-variant: small-caps;
-     color: rgb(44,62,80);
-     font-weight: 300;
-}
-
-
-.hero-blog-title {
-     font-variant: small-caps;
-     font-weight: 200;
-     font-size: 3em;
-     color: rgb(44,62,80);
-     overflow-x: visible;
-}
-
-.hero-blog-subtitle {
-     font-variant: small-caps;
-     color: rgb(44,62,80);
-     font-weight: 300;
-}
-
-.top-area {
-    margin-bottom: 30px;
-}
-
-.jumbotron {
-    width: 80%;
-    background-color: rgb(153,204,204);
-    color: rgb(33, 37, 41);
-    font-family: Lato;
-}
-
+/* Give background to the whole x axis */
 .bg-full {
   position: relative;
 }
@@ -77,91 +19,44 @@
   background: rgb(153,204,204);
 }
 
-.navbar {
-    background-color: #2c3e50 !important;
-}
-
-.navbar-brand {
-    color: white !important;
-}
-
-.navbar-brand-logo {
-    margin-right: 15px;
-}
-
 .ecosystem {
     text-align: center;
     color: #red;
 }
 
 .section-heading .lead {
-    font-family: "Roboto",sans-serif;
     font-weight: 700;
     font-size: 28px;
 }
 
 .section-heading h2 {
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
+}
+.page-content > h1
+{
+    margin-top: 3rem;
+}
+.page-content > h1:first-child {
+    margin-top: 0rem;
 }
 
+.page-content > h2
+{
+    margin-top: 2rem;
+}
+.page-content > h2:first-child {
+    margin-top: 0.5rem;
+}
+
+
 .blog-header, .blog-post, .blog-pagination {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* Make sure the image size is reasonable. */
 .blog-post img {
   max-width: 100%;
 }
-
-.carousel {
-    background-color: black;
-    margin: 0 auto;
-    position: relative;
-    transform: translate(0%, -50%);
-
-}
-
-.carousel-caption {
-    padding-top: 15px;
-    padding-bottom: 5px;
-    position: static;
-    display: inline-block;
-    color: white;
-    text-align: center;
-}
-
-.carousel-caption p {
-    box-sizing: border-box;
-    position: static;
-    display: inline-block;
-    color: white;
-    text-align: center;
-}
-
-.carousel-caption p:hover {
-    color: #ee4c2c;
-}
-
-.carousel-item {
-    background-color: black;
-    white-space: nowrap;
-    font-size: 1.125rem;
-    text-align: center;
-    text-overflow: ellipsis;
-}
-
-
-.carousel-indicators {
-    margin-bottom: 0;
-}
-
-.footer {
-  position: relative;
-  margin-top: -150px; /* negative value of footer height */
-  height: 150px;
-  clear:both;
-  padding-top:20px;
-} 
 
 .highlight {
     box-sizing: border-box;
@@ -175,4 +70,42 @@
     padding: 20px;
     border: 1px solid #cccccc;
     border-radius: 6px;
+}
+
+
+footer {
+    margin-top:auto; 
+    border-top: 1px solid #cccccc;
+    margin-top: 5rem;
+    padding-top: 1rem;
+}
+
+#content-wrap {
+}
+
+.blog-post-content {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.blog-post blockquote,
+.page-content blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.page-content blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }

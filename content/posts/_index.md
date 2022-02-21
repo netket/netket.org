@@ -4,7 +4,7 @@ date: 2022-02-14T11:12:50+01:00
 draft: false
 
 menu: main
-weight: 30
+weight: 10
 
 hero:
   show: true

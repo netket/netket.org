@@ -2,11 +2,6 @@
 title: "NetKet-friendly Summer School in Toulouse"
 date: 2022-02-14T10:23:16+01:00
 draft: false
-
-hero:
-  show: true
-  show_news: true
-  title: "NetKet-friendly Summer School in Toulouse"
 ---
 
 We are glad to advertise that our dear colleagues in Toulouse are organising a Summer school in April on Machine Learning techniques for Quantum Many-Body Physics.

@@ -1,21 +1,19 @@
 ---
-title: "Redesigned Website"
-date: 2022-02-14T10:22:55+01:00
+title: "NetKet 3 ❤️ Jax"
+
+date: 2021-08-23
 draft: false
 author: Filippo Vicentini
 
 hero:
   show: true
   show_news: true
-  title: "Redesigned Website"
-
+  title: "NetKet-friendly Summer School in Toulouse"
 ---
 
-lorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum dolorem
+18 months in development, NetKet 3.0 indicates a major new step for the NetKet project. NetKet has been totally rewritten in Python and is now a Jax-based library. This guarantees outstanding performance while allowing researchers to exploit machine-learning frameworks to define advanced Neural-Networks.
 
-lorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum dolorem
+GPUs and Google’s TPUs are now supported too!
 
-lorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum dolorem
-lorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum dolorem
+Update now and try the new examples!
 
-lorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum doloremlorem ipsum dolorem

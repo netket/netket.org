@@ -1,19 +1,19 @@
 [[main]]
   identifier = "documentation"
   name = "Documentation"
-  url = "https://www.netket.org/docs/getting_started.html"
+  url = "https://netket.readthedocs.io/en/latest/index.html"
   weight = 80
   
 [[main]]
   identifier = "api"
   name = "API Reference"
-  url = "https://www.netket.org/docs/api.html"
+  url = "https://netket.readthedocs.io/en/latest/api/api.html"
   weight = 1000
 
 [[links]]
   identifier = 'github'
   pre = "<i class='bi bi-github'></i>"
-  url = "http://www.github.com"
+  url = "http://www.github.com/netket/netket"
   weight = 90
 
 [[links]]

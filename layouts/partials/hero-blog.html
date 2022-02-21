@@ -1,12 +1,24 @@
 {{ $hero := .Params.hero }}
 {{ $title := $hero.title }}
 {{ $logo := $hero.logo }}
+{{ $dateFormat := default "Jan 2, 2006" (index .Site.Params "date_format") }}
+{{ $author := .Params.author | default .Site.Params.author }}
 
-  <div class="bg-full jumbotron container col-xxl-12 px-4 py-5">
-    <div class="row flex-lg-row align-items-center g-5 py-5">
-        <p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">{{- $title -}}</p>
-        {{- with $hero.subtitle -}}
-        <p class="h2 lead hero-blog-subtitle">{{- . -}}</p>
-        {{- end -}}
+<div class="bg-full jumbotron container col-xxl-12 px-4 py-2">
+  <div class="row flex-lg-row align-items-center g-1 pt-4 pb-4">
+    <div class="col-12 pt-1 pr-0 mr-0">
+      <p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">{{- .Title | markdownify -}}</p>
+      {{- with .Params.subtitle -}}
+      <p class="h2 lead hero-blog-subtitle">{{- . | markdownify -}}</p>
+      {{- end -}}
+      <div class="blog-post-date text-secondary">
+          {{ if not .Date.IsZero }}
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>
+          {{ end }}
+          {{ if $author }}
+              {{ i18n "by" }} <span rel="author">{{ $author }}</span>
+          {{ end }}
+      </div>
     </div>
   </div>
+</div>

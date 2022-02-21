@@ -3,13 +3,13 @@ title: "Citing"
 date: 2022-02-01T18:02:27+01:00
 draft: false
 menu: main
-weight: 20
+weight: 30
 
 hero:
   show: true
   show_news: true
   title: "Citing"
-  subtitle: "Giving what's due."
+  subtitle: "Sustain the developers!"
   logo: "logo/logo_transparent.png"
 
 ---

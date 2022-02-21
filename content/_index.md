@@ -11,26 +11,8 @@ hero:
   title: "NetKet"
   subtitle: "The Machine-Learning toolbox for Quantum Physics"
   logo: "logo/logo_transparent.png"
-
+  button: 
+    text: "View Paper"
+    url: "https://arxiv.org/abs/2112.10526"
 ---
 
-Content in **bold**
-
-## lists
-
-- some
-- other
-- stuff
- 
-## other lists
-
-1. some
-2. other
-3. stuff
-
-
-## link
-
-[google](www.google.com)
-
-<a class="btn btn-primary" href="#" role="button">Link</a>

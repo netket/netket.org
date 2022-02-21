@@ -1,0 +1,61 @@
+
+.carousel {
+    background-color: #C3423F;
+    margin: 0 auto;
+    /*position: relative;
+    transform: translate(0%, -50%);*/
+}
+
+.carousel.bg-full:before {
+  background-color: #C3423F;
+}
+
+/* Override the inner width so that content 
+   does not go under the arrows */
+.carousel-inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.carousel-caption {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    position: static;
+    display: inline-block;
+    color: white;
+    text-align: center;
+
+    margin: auto;
+    width: 80%;
+}
+
+.carousel-caption a {
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    position: static;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption a:hover {
+    color: black;
+}
+
+.carousel-item {
+    white-space: nowrap;
+    font-size: 1.125rem;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+
+.carousel-indicators {
+    margin-bottom: 0;
+}

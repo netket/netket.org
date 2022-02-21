@@ -1,3 +1,4 @@
+<!-- layout/posts/summary.html -->
 <article class="blog-post">
     <header>
         {{ partial "post-title" . }}
@@ -5,9 +6,13 @@
         {{ partial "post-tags" . }}
         {{ partial "post-categories" . }}
     </header>
-    {{ .Summary }}
-    {{ if .Truncated }}
-    <p></p>
-    <a href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
-    {{ end }}
+    <div class="blog-post-content">
+        {{- .Summary -}}
+        {{- if .Truncated -}}
+            ...
+            <p></p>
+            <a href="{{ .RelPermalink }}">readMore</a>
+        {{- end -}}
+    </div>
 </article>
+<!-- \ layout/posts/summary.html -->

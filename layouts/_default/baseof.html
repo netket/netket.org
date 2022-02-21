@@ -5,10 +5,12 @@
     {{- partial "head" . -}}
   </head>
   <body>
-    <!-- {{- partial "navbar" . -}} -->
     {{ partial "header" . }}
+    <div id="content-wrap" class="pt-5">
     {{ block "main" . }}{{ end }}
+    </div>
     {{ partial "footer" . }}
+
     {{ partial "script-footer" . }}
   </body>
 </html>

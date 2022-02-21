@@ -1,3 +1,4 @@
+<!-- layout/posts/content.html -->
 <article class="blog-post">
     <header>
         {{ partial "post-title" . }}
@@ -5,5 +6,8 @@
         {{ partial "post-tags" . }}
         {{ partial "post-categories" . }}
     </header>
-    {{ .Content }}
+    <div class="blog-post-content">
+        {{ .Content }}
+    </div>
 </article>
+<!-- \ layout/posts/content.html-->

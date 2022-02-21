@@ -1,11 +1,31 @@
-baseURL = "http://example.org/"
+baseURL = "https://philipvinc.github.io/netket.org"
 languageCode = "en-us"
 title = "NetKet"
+copyright = "Copyright 2019-2022, The Netket authors - All rights reserved."
+
+[author]
+  name = "Filippo Vicentini and Giuseppe Carleo"
 
 [params]
-slogan = "The Machine Learning Toolbox for Quantum Physics"
+description = "The Machine Learning Toolbox for Quantum Physics"
+slack_link = "https://join.slack.com/t/mlquantum/shared_invite/zt-13nohbtt3-nWgz~faxWXjVnu0BCHWM7w"
+
+[params.image]
+  url = "logo/logo_transparent_small.png"
+  width = 800
+  height = 600
+
+
+[params.navbar]
+logo = "logo/logonav.png"
 linksOnlyIcon = true
-navbarLogo = "logo/logonav.png"
+
+[params.navbar.button]
+url = "get_started"
+text = "Get Started"
+
+[markup.goldmark.renderer]
+unsafe = true
 
 [[params.keyfeatures.features]]
 title = "Neural Quantum States"
@@ -25,11 +45,11 @@ text = "NetKet allows you to easily find the ground state or simulate the dynami
 
 [[params.keyfeatures.features]]
 title = "Easy to use"
-text = "NumPy's high level syntax makes it accessible and productive for programmers from any background or experience level."
+text = "NetKet has an high-level syntax that is easy to use, while exposing low level objects that can be combined together to develop novel algorithms."
 
 [[params.keyfeatures.features]]
 title = "Open source"
-text = "Distributed under a liberal [BSD license](https://github.com/numpy/numpy/blob/main/LICENSE.txt), NumPy is developed and maintained [publicly on GitHub](https://github.com/numpy/numpy) by a vibrant, responsive, and diverse [community](/community)."
+text = "NetKet is a collaborative effort by a group of researchers. We are constantly looking for new contributors. Do get in touch with us through the [Github Discussions](https://github.com/netket/netket/discussions) or through our Slack Channel"
 
 [params.installationWidget]
 title = "INSTALLATION WIDGET"
@@ -38,5 +58,3 @@ title = "INSTALLATION WIDGET"
   title = "Quality 1"
   text = "Text on Quality 1"
 
-[markup.goldmark.renderer]
-unsafe = true
