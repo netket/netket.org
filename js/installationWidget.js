@@ -61,7 +61,7 @@ updateCommand = () => {
    var prep_string = "";
    switch(osId) {
         case 'macos-arm':
-            prep_string = "conda install conda-forge::numba";
+            prep_string = "pip install 'numpy==1.21.*' importlib-metadata\n pip install -i https://pypi.anaconda.org/numba/label/wheels_experimental_m1/simple numba";
    }
 
    var pkg_name = "netket";
