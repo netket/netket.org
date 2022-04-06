@@ -43,6 +43,6 @@ jobs:
         publish_dir: ./public
         enable_jekyll: false
         # keep_files: true
-        # cname: www.netket.org
+        cname: www.netket.org
         # user_name: <username>
         # user_email: <username@email.com>
