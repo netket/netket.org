@@ -8,7 +8,7 @@ copyright = "Copyright 2019-2022, The Netket authors - All rights reserved."
 
 [params]
 description = "The Machine Learning Toolbox for Quantum Physics"
-slack_link = "https://join.slack.com/t/mlquantum/shared_invite/zt-13nohbtt3-nWgz~faxWXjVnu0BCHWM7w"
+slack_link = "https://join.slack.com/t/mlquantum/shared_invite/zt-16r1nfgoy-VkSghuNL1Co0mu3iYwOhuA"
 
 [params.image]
   url = "logo/logo_transparent_small.png"
