@@ -29,7 +29,7 @@ You can also install NetKet on your local computer following those instructions:
 
 {{% card_collapse summary="Make sure you have Python 3.7 or higher installed on Mac or Linux" %}}
 If Python 3.7 is not available on your computer, don't despair! 
-You can use [pyenv](https://github.com/pyenv/pyenv) (the easiest way to install it is with the [pyenv installer](https://github.com/pyenv/pyenv-installer) to install any Python version, or you can use Anaconda, even though the latter is not recomended if you plan on using MPI.
+You can use [pyenv](https://github.com/pyenv/pyenv) (the easiest way to install it is with the [pyenv installer](https://github.com/pyenv/pyenv-installer) to install any Python version, or you can use Anaconda, even though the latter is not recommended if you plan on using MPI.
 
 Windows is not natively supported because Jax does not yet support it. 
 However, if you use WSL (Windows Subsystem for Linux) NetKet will run smoothly.
