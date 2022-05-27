@@ -37,7 +37,7 @@ text = "Netket is based on Jax, therefore you can run on CPUs, GPUs and TPUs any
 
 [[params.keyfeatures.features]]
 title = "Interoperable"
-text = "NetKet can easily interperate with other tools such as [OpenFermion](https://quantumai.google/openfermion) or [QuTiP](https://qutip.org/)."
+text = "NetKet can easily interoperate with other tools such as [OpenFermion](https://quantumai.google/openfermion) or [QuTiP](https://qutip.org/)."
 
 [[params.keyfeatures.features]]
 title = "Ground-State"
