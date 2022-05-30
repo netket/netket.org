@@ -41,7 +41,7 @@ When using MPI, we recommend not to use Anaconda unless it's for small experimen
 This is due to a dependency of netket, mpi4jax. You can read more about the limitations on the [mpi4jax documentation](https://mpi4jax.readthedocs.io/en/latest/installation.html>).
 {{% /card_collapse %}}
 
-{{% card_collapse install_widget=false summary="Use this widget below to find the best command to install NetKet." %}}
+{{% card_collapse expanded=true summary="Use this widget below to find the best command to install NetKet." %}}
 {{< installationWidget >}}
 
 If you have issues, check the [full documentation](https://netket.readthedocs.io/en/latest/docs/install.html).
