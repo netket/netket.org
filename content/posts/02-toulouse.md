@@ -6,7 +6,6 @@ draft: false
 
 We are glad to advertise that our dear colleagues in Toulouse are organising a Summer school in April on Machine Learning techniques for Quantum Many-Body Physics.
 The school will feature several lectures and tutorials on NetKet.
-On 
 
 Below you can find the original announcement.
 
