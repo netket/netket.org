@@ -41,7 +41,9 @@ updateCommand = () => {
 
         }
         extras_variants = extras_variants.slice(0, -2)
-        extras_variants = `[${extras_variants}]`
+        if (extras_variants.length > 0) {
+            extras_variants = `[${extras_variants}]`            
+        }
     } 
 
     console.log(`extra variant `, extras_variants)
@@ -49,10 +51,12 @@ updateCommand = () => {
 
 
    var acc_string = ""
+   var source_url = ""
 
    switch(accelleratorId) {
     case 'gpu':
-        acc_string = "-f https://storage.googleapis.com/jax-releases/jax_releases.html 'jax[cuda]'";
+        source_url = "-f https://storage.googleapis.com/jax-releases/jax_releases.html"
+        acc_string = "'jax[cuda]'";
         break;
     default:
         break;
@@ -60,8 +64,13 @@ updateCommand = () => {
 
    var prep_string = "";
    switch(osId) {
-        case 'macos-arm':
-            prep_string = "pip install 'numpy==1.21.*' importlib-metadata\n pip install -i https://pypi.anaconda.org/numba/label/wheels_experimental_m1/simple numba";
+        case 'windows':
+            source_url = "-f https://whls.blob.core.windows.net/unstable/index.html"
+            if (acc_string == "") {
+                prep_string = `pip install ${source_url} jax`;
+            } else {
+                prep_string = `pip install ${source_url} ${acc_string}`;
+            }
    }
 
    var pkg_name = "netket";
@@ -80,10 +89,10 @@ updateCommand = () => {
            // http://scipy.github.io/devdocs/building/index.html#building are
            // out of date and also need to be made NumPy-specific
            switch(osId) {
-                case 'macos-arm':
+                case 'windows':
                     document.getElementById("command").innerHTML = `
-                    ${prep_string}
                     pip install --upgrade pip
+                    ${prep_string}
                     pip install --upgrade ${acc_string} '${pkg_name}${extras_variants}' ${extra_packages}
                     `.replace(/ +(?= )/g,'');
                     break;
@@ -91,7 +100,7 @@ updateCommand = () => {
                 case 'linux':
                     document.getElementById("command").innerHTML = `
                     pip install --upgrade pip
-                    pip install --upgrade ${acc_string} '${pkg_name}${extras_variants}' ${extra_packages}
+                    pip install --upgrade ${source_url} ${acc_string} '${pkg_name}${extras_variants}' ${extra_packages}
                     `.replace(/ +(?= )/g,'');
                     break;
             }
@@ -118,11 +127,11 @@ for (var i = 0; i < osOptions.length; i++) {
 
     var osId = current[0].id // selectedOptions[0] is a Node from above live HTMLCollection, Node is similar to Element. selectedOptions[0].id returns the id value of the Node. Syntax is 'Element.id'
     switch(osId) {
+        case 'windows':
         case 'linux':
             document.getElementById("gpu").classList.remove("disabled");
             break;
         case 'macos':
-        case 'macos-arm':
             document.getElementById("gpu").classList.add("disabled");
             document.getElementById("gpu").classList.remove("selected");
             document.getElementById("cpu").classList.add("selected");

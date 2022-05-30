@@ -1,4 +1,5 @@
-<details class="card dropdown mb-3">
+
+<details class="card dropdown mb-3" {{- if .Get "expanded" -}}open{{- end -}}>
 	<summary class="summary-title card-header">
 	{{- .Get "summary" | markdownify -}}
 		<div class="summary-down docutils">
