@@ -34,7 +34,7 @@ We are offering 4 bounties, some of which don't require particular experience wi
   The algorithms used by NetKet to compute statistical estimators and convergence indicators require that the whole set of random variables be kept in memory. However, in the future we would like to estimate those observables on amounts of data so large that do not fit on the memory of the device, and therefore this bounty is about implementing single-pass algorithms that can estimate relevant quantities by reading the data only once. To work on this bounty you'll need a basic understanding of statistics. 
 
 
-If you are interested in those projects, but are unsure of where to start from, do get in touch with us through the NetKet's Slack channel, linked at the top right of this website, or by launching a discussion on GitHub. 
+If you are interested in those projects, but are unsure of where to start from, do get in touch with us through the [NetKet's Slack channel](https://join.slack.com/t/mlquantum/shared_invite/zt-19wibmfdv-LLRI6i43wrLev6oQX0OfOw) or by launching a discussion on GitHub. 
 
 We are really looking forward to welcoming new contributors to the project! 
 
