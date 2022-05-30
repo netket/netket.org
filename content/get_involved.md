@@ -22,22 +22,16 @@ Users and developers of NetKet hang out in the following places:
 
 
 
-# Google Summer of Code
+# Projects
 
-NetKet will be participating in [Google Summer of Code](https://summerofcode.withgoogle.com/) (GSoC) 2022 as an independent organisation.
+NetKet will *not* be participating in [Google Summer of Code](https://summerofcode.withgoogle.com/) (GSoC) 2022, though we hope to be able to partecipate in the summer of 2023.
 
-> Google Summer of Code is a global, online program focused on bringing new contributors into open source software development.
-> GSoC Contributors work with an open source organization on a 12+ week programming project under the guidance of mentors.
+If you are interested in contributing to NetKet we would be very happy to welcome you and guide you in the process. 
+Below you can find a list of sensibly-sized projects for which we'd love to find some contributors, such as young PhD students that are starting to be involved in the field.
 
-Participants must select an organisation and a project on which they want to work, and they receive a [stipend](https://developers.google.com/open-source/gsoc/help/student-stipends) for their contribution.
-Projects can either be 175 hours-long (approximately 12 weeks) or 350 hours-long (approximately 22 weeks). 
-More details are provided on Google's website.
+The projects are written for Google Summer of Code, and if they won't be tackled by the time being we will offer them again next year.
+In the meantime, if you are interested in starting to work on them, do get in touch with us!
 
-If you are interested in contributing to NetKet under the Google's summer of code, we encourage you to get in touch with us to discuss the project you would like to undertake. 
-Below we list some projects that we would be very happy to mentor, but if you have other ideas we will consider them.
-
-Due to the nature of NetKet, we look for participants who understand the basis of quantum mechanics and numerical physics. 
-Senior master students in Math/Physics/Computer science or Doctoral students are our ideal contributors.
 
 ## Implement Implicit variational time evolution Algorithms
 
