@@ -24,16 +24,16 @@ We are offering the following 4 bounties, some of which don't require particular
 
   Sometimes users get bad results when running simulations with NetKet, but don't notice that there are sampling errors and that the software is already hinting at the solution. As this error is very common between novices and new users, we would like to integrate with the [rich framework](https://github.com/Textualize/rich) to display statistical convergence indicators using colors that vary depending on whether their value is good or bad.   
 
-- [#1206](https://github.com/netket/netket/issues/1206) Implement support for Ladder operators in PauliStrings (100$) 
+- [#1206](https://github.com/netket/netket/issues/1206) Implement support for Ladder operators in PauliStrings ($100) 
 
-  NetKet implements several kind of specialized types of operators which behave somewhat like a sparse matrix, but can encode operators in hilbert spaces much larger than 2^64, and which are much more efficient at the operations that we require for Monte-Carlo algorithms. One of thosse operators is the PauliStrings operator, very similar to qiskit's and Pennylane's PauliStringSum operators. Right now it supports the "X,Y,Z,I" operators, but we would like to add support for ladder operators. To work on this task, you'll need some knowledge of linear algebra/elementary quantum mechanics.
+  NetKet implements several kind of specialized types of operators which behave somewhat like a sparse matrix, but can encode operators in Hilbert spaces much larger than 2^64, and which are much more efficient at the operations that we require for Monte-Carlo algorithms. One of those operators is the `PauliStrings` operator, very similar to qiskit's and Pennylane's `PauliStringSum` operators. Right now it supports the "X,Y,Z,I" operators, but we would like to add support for ladder operators. To work on this task, you'll need some knowledge of linear algebra/elementary quantum mechanics.
 
-- [#1220](https://github.com/netket/netket/issues/1220) Add single-pass online statistics support to netket (75$) 
+- [#1220](https://github.com/netket/netket/issues/1220) Add single-pass online statistics support to NetKet ($75) 
 
-  The algorithms used by NetKet to compute statistical estimators and convergence indicators require that the whole set of random variables be kept in memory. However, in the future we would like to estimate those observables on amounts of data so large that do not fit on the memory of the device, and therefore this bounty is about implementing single-pass algorithms that can estimate relevant quantities by reading the data only once. To work on this bounty you'll need a basic understanding of statistics. 
+  The algorithms used by NetKet to compute statistical estimators and convergence indicators require that the whole set of random variables be kept in memory. However, in the future we would like to estimate those observables on amounts of data so large that do not fit on the memory of the device. Therefore, this bounty is about implementing single-pass algorithms that can estimate relevant quantities by reading the data only once. To work on this bounty, you'll need a basic understanding of statistics. 
 
 
-If you are interested in those projects, but are unsure of where to start from, do get in touch with us through the [NetKet's Slack channel](https://join.slack.com/t/mlquantum/shared_invite/zt-19wibmfdv-LLRI6i43wrLev6oQX0OfOw) or by launching a discussion on GitHub. 
+If you are interested in those projects, but are unsure of where to start from, do get in touch with us through [NetKet's Slack channel](https://join.slack.com/t/mlquantum/shared_invite/zt-19wibmfdv-LLRI6i43wrLev6oQX0OfOw) or by launching a discussion on GitHub. 
 
 We are really looking forward to welcoming new contributors to the project! 
 
