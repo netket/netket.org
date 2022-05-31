@@ -20,7 +20,7 @@ We are offering the following 4 bounties, some of which don't require particular
 
   [HDF5](https://docs.h5py.org) is a commonly used file-format that can store any kind of data. We would like contributors to implement a logger that can output this kind of files. No experience with quantum-related topics is required to win this bounty!
 
-- [#1201](https://github.com/netket/netket/issues/1201) Use colors to signal bad sampling in expectation value/samplers state (50$) 
+- [#1201](https://github.com/netket/netket/issues/1201) Use colors to signal bad sampling in expectation value/samplers state ($50) 
 
   Sometimes users get bad results when running simulations with NetKet, but don't notice that there are sampling errors and that the software is already hinting at the solution. As this error is very common between novices and new users, we would like to integrate with the [rich framework](https://github.com/Textualize/rich) to display statistical convergence indicators using colors that vary depending on whether their value is good or bad.   
 
