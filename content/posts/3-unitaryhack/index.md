@@ -5,21 +5,20 @@ draft: false
 author: Filippo Vicentini
 ---
 
-NetKet is partecipating in the 2022 edition of [UnitaryHack](https://unitaryhack.dev), kindly sponsored by the quantum non-profit [Unitary Fund](https://unitary.fund).
+NetKet is participating in the 2022 edition of [UnitaryHack](https://unitaryhack.dev), kindly sponsored by the quantum non-profit [Unitary Fund](https://unitary.fund).
 
-The hackathon will run for two weeks, from Friday, June 3rd to Friday, June 17, and sees several high-profile quantum software projects proposing bounties to complete some tasks that will benefit them.
+The hackathon will run for two weeks, from Friday, June 3 to Friday, June 17. During the hackathon, several high-profile quantum software projects are each proposing several tasks for which Unitary Fund will provide a bounty to the participant completing the task.
 
 ![Image alt](images/UHack_short.gif)
 
-The hackathon will run for two weeks, from Friday, June 3rd to Friday, June 17, and sees several high-profile quantum software projects proposing bounties to complete some tasks that will benefit them.
 
-NetKet is partecipating with 4 bounties to this Hackathon worth 300$ in total. To claim a bounty you need to get a PR accepted (not necessarily merged) by the maintainers *before* the end of the hackathon. The precise instructions to follow are found in the [UnitaryHack](https://unitaryhack.dev/hacker-guide/) website, and the precise list of bounties can be found [here](https://unitaryhack.dev/projects/netket/).
+NetKet is participating with 4 bounties to this hackathon, which are worth US$ 300 in total. To claim a bounty, you need to get a PR accepted (not necessarily merged) by the maintainers *before* the end of the hackathon. The precise instructions to follow are found in the [UnitaryHack](https://unitaryhack.dev/hacker-guide/) website and the list of bounties can be found [here](https://unitaryhack.dev/projects/netket/).
 
-We are offering 4 bounties, some of which don't require particular experience with quantum physics but which will benefit the NetKet project as a whole. Here is the list:
+We are offering the following 4 bounties, some of which don't require particular experience with quantum physics but which will benefit the usability of the NetKet project as a whole:
 
-- [#1200](https://github.com/netket/netket/issues/1200) Add support for a single-file HDF5 based logging sink (75$)
+- [#1200](https://github.com/netket/netket/issues/1200) Add support for a single-file HDF5 based logging sink ($75)
 
-  [HDF5](https://docs.h5py.org) is a commonly used file-format that can store any kind of data. We would like contributors to implement a logger that can output this kind of files. No experience with quantum-related topics is required to carry win this bounty!
+  [HDF5](https://docs.h5py.org) is a commonly used file-format that can store any kind of data. We would like contributors to implement a logger that can output this kind of files. No experience with quantum-related topics is required to win this bounty!
 
 - [#1201](https://github.com/netket/netket/issues/1201) Use colors to signal bad sampling in expectation value/samplers state (50$) 
 
