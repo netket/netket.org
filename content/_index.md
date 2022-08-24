@@ -13,6 +13,6 @@ hero:
   logo: "logo/logo_transparent.png"
   button: 
     text: "View Paper"
-    url: "https://arxiv.org/abs/2112.10526"
+    url: "https://scipost.org/SciPostPhysCodeb.7/pdf"
 ---
 
