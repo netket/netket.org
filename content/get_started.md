@@ -14,7 +14,7 @@ hero:
 # QuickStart on the Cloud
 
 The simplest way to get started with NetKet is to use [Google's Colab](https://colab.research.google.com/?utm_source=scs-index), an online notebook environment with access to GPUs. 
-If you have a google, account, simply head to [NetKet's documentation](https://www.netket.org/docs/getting_started.html), select the first tutorial, and click on the small rocket icon on the top navigation bar. 
+If you have a google, account, simply head to [NetKet's documentation](https://netket.readthedocs.io/en/latest/), select the first tutorial, and click on the small rocket icon on the top navigation bar. 
 This will launch the tutorial on an online environment that is ready to use.
 
 For example, you can simply click on this button and get started!
@@ -47,7 +47,7 @@ This is due to a dependency of netket, mpi4jax. You can read more about the limi
 If you have issues, check the [full documentation](https://netket.readthedocs.io/en/latest/docs/install.html).
 {{% /card_collapse %}}
 
-{{% card_collapse summary="Explore our [Tutorials](https://netket.readthedocs.io/en/latest/tutorials/gs-ising.html) and check out our [Examples](https://github.com/netket/netket/tree/master/Examples>). If you still have questions, get in touch with us!" %}}
+{{% card_collapse summary="Explore our [Tutorials](https://netket.readthedocs.io/en/latest/tutorials/gs-ising.html) and check out our [Examples](https://github.com/netket/netket/tree/master/Examples). If you still have questions, get in touch with us!" %}}
 
 - Tutorials are commented python notebooks.
 - Examples are sample python files that can be run.
