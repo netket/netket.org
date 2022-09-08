@@ -55,7 +55,7 @@ updateCommand = () => {
 
    switch(accelleratorId) {
     case 'gpu':
-        source_url = "-f https://storage.googleapis.com/jax-releases/jax_releases.html"
+        source_url = "-f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html"
         acc_string = "'jax[cuda]'";
         break;
     default:
