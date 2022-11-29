@@ -27,16 +27,15 @@ NetKet 2 as well.
 Below are BibTeX entries for both papers:
 
 ```bibtex
-@misc{netket3:2021,
-  title={NetKet 3: Machine Learning Toolbox for Many-Body Quantum Systems},
-  author={Filippo Vicentini and Damian Hofmann and Attila Szabó and Dian Wu and Christopher Roth
-      and Clemens Giuliani and Gabriel Pescia and Jannes Nys and Vladimir Vargas-Calderon
-      and Nikita Astrakhantsev and Giuseppe Carleo},
-  year={2021},
-  eprint={2112.10526},
-  archivePrefix={arXiv},
-  primaryClass={quant-ph},
-  url={https://arxiv.org/abs/2112.10526}
+@Article{netket3:2022,
+	title={{NetKet 3: Machine Learning Toolbox for Many-Body Quantum Systems}},
+	author={Filippo Vicentini and Damian Hofmann and Attila Szabó and Dian Wu and Christopher Roth and Clemens Giuliani and Gabriel Pescia and Jannes Nys and Vladimir Vargas-Calderón and Nikita Astrakhantsev and Giuseppe Carleo},
+	journal={SciPost Phys. Codebases},
+	pages={7},
+	year={2022},
+	publisher={SciPost},
+	doi={10.21468/SciPostPhysCodeb.7},
+	url={https://scipost.org/10.21468/SciPostPhysCodeb.7},
 }
 
 @article{netket2:2019,
