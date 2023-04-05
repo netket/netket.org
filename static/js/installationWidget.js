@@ -65,12 +65,8 @@ updateCommand = () => {
    var prep_string = "";
    switch(osId) {
         case 'windows':
-            source_url = "-f https://whls.blob.core.windows.net/unstable/index.html"
-            if (acc_string == "") {
-                prep_string = `pip install ${source_url} jax`;
-            } else {
-                prep_string = `pip install ${source_url} ${acc_string}`;
-            }
+            source_url = "-f https://whls.blob.core.windows.net/unstable/index.html --use-deprecated=legacy-resolver"
+            prep_string = `pip install ${source_url} jax[cpu]==0.3.25`;
    }
 
    var pkg_name = "netket";
@@ -127,14 +123,32 @@ for (var i = 0; i < osOptions.length; i++) {
 
     var osId = current[0].id // selectedOptions[0] is a Node from above live HTMLCollection, Node is similar to Element. selectedOptions[0].id returns the id value of the Node. Syntax is 'Element.id'
     switch(osId) {
-        case 'windows':
         case 'linux':
             document.getElementById("gpu").classList.remove("disabled");
+
+            document.getElementById("conda").classList.remove("disabled");
+            break;
+        case 'windows':
+            document.getElementById("gpu").classList.add("disabled");
+            if (document.getElementById("gpu").classList.contains("selected")) {
+                document.getElementById("gpu").classList.remove("selected");
+                document.getElementById("cpu").classList.add("selected");
+            }
+
+            if (document.getElementById("conda").classList.contains("selected")) {
+                document.getElementById("conda").classList.remove("selected")
+                document.getElementById("pip").classList.add("selected")
+            }
+            document.getElementById("conda").classList.add("disabled");
             break;
         case 'macos':
             document.getElementById("gpu").classList.add("disabled");
-            document.getElementById("gpu").classList.remove("selected");
-            document.getElementById("cpu").classList.add("selected");
+            if (document.getElementById("gpu").classList.contains("selected")) {
+                document.getElementById("gpu").classList.remove("selected");
+                document.getElementById("cpu").classList.add("selected");
+            }
+
+            document.getElementById("conda").classList.remove("disabled");
             break;
     }
 
@@ -146,8 +160,12 @@ for (var i = 0; i < packageOptions.length; i++) {
     packageOptions[i].addEventListener("click", function() {
     var current = packageContainer.getElementsByClassName("selected");
     console.log(`this is current`, current)
-    current[0].className = current[0].className.replace(" selected", "");
-    this.className += " selected";
+    if (this.classList.contains("disabled") || this.classList.contains("disabled-p")) {
+        console.log(`accelleratorContainer disabled`)
+    } else {
+        current[0].className = current[0].className.replace(" selected", "");
+        this.className += " selected";
+    }
     console.log(`packageContainer `,packageContainer)
     console.log(`packageOptions `,packageOptions)
 
@@ -157,7 +175,6 @@ for (var i = 0; i < packageOptions.length; i++) {
             document.getElementById("gpu").classList.add("disabled-p");
             document.getElementById("gpu").classList.remove("selected");
             document.getElementById("cpu").classList.add("selected");
-
 
             document.getElementById("mpi").classList.add("selected");
             document.getElementById("mpi").classList.add("forced");
