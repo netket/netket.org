@@ -3,8 +3,8 @@ title: "NetKet 3.5 highlights"
 date: 2022-08-19T10:23:16+01:00
 draft: false
 author: Filippo Vicentini
-mintoclevel = 2
-maxtoclevel = 3
+mintoclevel: 2
+maxtoclevel: 3
 
 ---
 
