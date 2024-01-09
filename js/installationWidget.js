@@ -56,7 +56,7 @@ updateCommand = () => {
    switch(accelleratorId) {
     case 'gpu':
         source_url = "-f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html"
-        acc_string = "'jax[cuda]'";
+        acc_string = "'jax[cuda12_pip]'";
         break;
     default:
         break;
@@ -64,9 +64,7 @@ updateCommand = () => {
 
    var prep_string = "";
    switch(osId) {
-        case 'windows':
-            source_url = "-f https://whls.blob.core.windows.net/unstable/index.html --use-deprecated=legacy-resolver"
-            prep_string = `pip install ${source_url} jax[cpu]==0.3.25`;
+        default:
    }
 
    var pkg_name = "netket";
