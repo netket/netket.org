@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container">
+    {{- partial "top-area-blog" . -}}
+    <!-- END TOP AREA -->
+    <div class="row justify-content-center">
+        <div class="col col-sm-8">
+            <article class="blog-post justify-content-center">
+                {{ .Content }}
+
+                {{ partial "related" . }}
+            </article>
+        </div>
+    </div>
+</div>
+{{ end }}
