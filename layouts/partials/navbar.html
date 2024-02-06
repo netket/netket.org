@@ -2,9 +2,9 @@
 
 <nav class="navbar navbar-top navbar-expand-md fixed-top bd-navbar flex-md navbar-dark bg-light">
     <div class="container">
-        <a class="navbar-brand navbar-custom-brand" href="{{ "." | absURL}}">
+        <a class="navbar-brand navbar-custom-brand" href="{{ "." | relURL}}">
           {{- with $navbar.logo -}}
-          <img class="navbar-brand-logo d-inline-block align-center" src="{{ printf "%s" . | absURL }}" loading="lazy">
+          <img class="navbar-brand-logo d-inline-block align-center" src="{{ printf "%s" . | relURL }}" loading="lazy">
           {{- end -}}
           <div class="navbar-brand-text d-inline-block align-center">
           {{- .Site.Title -}}
@@ -21,7 +21,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 {{ range .Site.Menus.main }}
                 <li class="nav-item mx-auto">
-                    <a class="nav-link {{ if $.IsMenuCurrent " main " . }} active" aria-current="page{{ end }}" href="{{ .URL | absURL }}">
+                    <a class="nav-link {{ if $.IsMenuCurrent " main " . }} active" aria-current="page{{ end }}" href="{{ .URL | relURL }}">
                       {{ .Pre }}
                       {{ .Name }}
                       {{ .Post }}
@@ -46,7 +46,7 @@
                 {{- with $navbar.button -}}
                 <!-- Download button -->
                 <li class="nav-item">
-                    <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ms-md-3" href="{{ printf "%s" .url | absURL }}">
+                    <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ms-md-3" href="{{ printf "%s" .url | relURL }}">
                         {{- .text -}}
                     </a>
                 </li>

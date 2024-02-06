@@ -1,4 +1,4 @@
-baseURL = "https://www.netket.org"
+# baseURL = "https://www.netket.org"
 languageCode = "en-us"
 title = "NetKet"
 copyright = "Copyright 2019-2022, The Netket authors - All rights reserved."

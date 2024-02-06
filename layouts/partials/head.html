@@ -14,25 +14,25 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 <!-- Favicons -->
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | absURL }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | absURL }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png" | absURL }}">
-<link rel="manifest" href="{{ "favicon/site.webmanifest" | absURL }}">
-<link rel="mask-icon" href="{{ "favicon/safari-pinned-tab.svg" | absURL }}" color="#2c3e50">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png" | relURL }}">
+<link rel="manifest" href="{{ "favicon/site.webmanifest" | relURL }}">
+<link rel="mask-icon" href="{{ "favicon/safari-pinned-tab.svg" | relURL }}" color="#2c3e50">
 <meta name="msapplication-TileColor" content="#2c3e50">
 <meta name="theme-color" content="#2c3e50">
 
 <!-- Additional CSS -->
-<link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
-<link rel="stylesheet" href="{{ "css/navbar.css" | absURL }}">
-<link rel="stylesheet" href="{{ "css/carousel.css" | absURL }}">
-<link rel="stylesheet" href="{{ "css/hero.css" | absURL }}">
-<link rel="stylesheet" href="{{ "css/keyfeatures.css" | absURL }}">
-<link rel="stylesheet" href="{{ "css/panels.css" | absURL }}">
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/navbar.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/carousel.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/hero.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/keyfeatures.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/panels.css" | relURL }}">
 
 {{ if ( .HasShortcode "installationWidget" ) }}
 <!-- Installation Widget CSS (only loaded if needed) -->
-<link rel="stylesheet" href="{{ "css/installationWidget.css" | absURL }}">
+<link rel="stylesheet" href="{{ "css/installationWidget.css" | relURL }}">
 {{ end }}
 
 <!-- Page Title (for headbar) -->
