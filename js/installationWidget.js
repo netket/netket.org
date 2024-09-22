@@ -55,8 +55,7 @@ updateCommand = () => {
 
    switch(accelleratorId) {
     case 'gpu':
-        source_url = "-f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html"
-        acc_string = "'jax[cuda12_pip]'";
+        acc_string = "'jax[cuda]'";
         break;
     default:
         break;
@@ -100,11 +99,6 @@ updateCommand = () => {
             }
         break;
 
-        case 'conda': 
-            document.getElementById("command").innerHTML = `
-            conda install -c conda-forge netket ${extra_packages}
-            `.replace(/ +(?= )/g,'');
-            break;
    }
 }
 
@@ -123,8 +117,6 @@ for (var i = 0; i < osOptions.length; i++) {
     switch(osId) {
         case 'linux':
             document.getElementById("gpu").classList.remove("disabled");
-
-            document.getElementById("conda").classList.remove("disabled");
             break;
         case 'windows':
             document.getElementById("gpu").classList.add("disabled");
@@ -133,11 +125,6 @@ for (var i = 0; i < osOptions.length; i++) {
                 document.getElementById("cpu").classList.add("selected");
             }
 
-            if (document.getElementById("conda").classList.contains("selected")) {
-                document.getElementById("conda").classList.remove("selected")
-                document.getElementById("pip").classList.add("selected")
-            }
-            document.getElementById("conda").classList.add("disabled");
             break;
         case 'macos':
             document.getElementById("gpu").classList.add("disabled");
@@ -145,8 +132,6 @@ for (var i = 0; i < osOptions.length; i++) {
                 document.getElementById("gpu").classList.remove("selected");
                 document.getElementById("cpu").classList.add("selected");
             }
-
-            document.getElementById("conda").classList.remove("disabled");
             break;
     }
 
@@ -169,14 +154,6 @@ for (var i = 0; i < packageOptions.length; i++) {
 
     var packageId = current[0].id // selectedOptions[0] is a Node from above live HTMLCollection, Node is similar to Element. selectedOptions[0].id returns the id value of the Node. Syntax is 'Element.id'
     switch(packageId) {
-        case 'conda':
-            document.getElementById("gpu").classList.add("disabled-p");
-            document.getElementById("gpu").classList.remove("selected");
-            document.getElementById("cpu").classList.add("selected");
-
-            document.getElementById("mpi").classList.add("selected");
-            document.getElementById("mpi").classList.add("forced");
-            break;
         default:
             document.getElementById("gpu").classList.remove("disabled-p");
             document.getElementById("mpi").classList.remove("forced");
