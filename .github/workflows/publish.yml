@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         submodules: true  # Fetch Hugo themes (true OR recursive)
         fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -19,7 +19,7 @@ jobs:
         hugo-version: "0.92.2"
 
     - name: Set up Python 3.8
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: 3.8
 
@@ -29,7 +29,7 @@ jobs:
       run: hugo --minify
 
     # Create an artifact of the html output.
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v4
       with:
         name: Website
         path: ./public
