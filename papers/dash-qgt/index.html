@@ -20,8 +20,8 @@
 <link rel=stylesheet href=/css/hero.css>
 <link rel=stylesheet href=/css/keyfeatures.css>
 <link rel=stylesheet href=/css/panels.css>
-<title>NetKet 3 ❤️ Jax - NetKet</title>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"NetKet 3 ❤️ Jax","mainEntityOfPage":{"@type":"WebPage","@id":"\/posts\/01-welcome\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"posts","wordcount":58,"url":"\/posts\/01-welcome\/","datePublished":"2021-08-23T00:00:00\u002b00:00","dateModified":"2021-08-23T00:00:00\u002b00:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini"},"description":""}</script>
+<title>Efficiency of neural quantum states in light of the quantum geometric tensor - NetKet</title>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Efficiency of neural quantum states in light of the quantum geometric tensor","mainEntityOfPage":{"@type":"WebPage","@id":"\/papers\/dash-qgt\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"papers","wordcount":181,"url":"\/papers\/dash-qgt\/","datePublished":"2024-01-15T00:00:00\u002b00:00","dateModified":"2024-01-15T00:00:00\u002b00:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini and Giuseppe Carleo"},"description":""}</script>
 </head>
 <body>
 <nav class="navbar navbar-top navbar-expand-md fixed-top bd-navbar flex-md navbar-dark bg-light">
@@ -86,9 +86,8 @@ API Reference
 <div class="bg-full jumbotron container col-xxl-12 px-4 py-2">
 <div class="row flex-lg-row align-items-center g-1 pt-4 pb-4">
 <div class="col-12 pt-1 pr-0 mr-0">
-<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">NetKet 3 ❤️ Jax</p><div class="blog-post-date text-secondary">
-<time datetime=2021-08-23>Aug 23, 2021</time>
-<span rel=author>Filippo Vicentini</span>
+<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">Efficiency of neural quantum states in light of the quantum geometric tensor</p><div class="blog-post-date text-secondary">
+<time datetime=2024-01-15>Jan 15, 2024</time>
 </div>
 </div>
 </div>
@@ -96,10 +95,24 @@ API Reference
 </div>
 <div class="row justify-content-center">
 <div class="col col-sm-8">
-<article class="blog-post justify-content-center">
-<p>18 months in development, NetKet 3.0 indicates a major new step for the NetKet project. NetKet has been totally rewritten in Python and is now a Jax-based library. This guarantees outstanding performance while allowing researchers to exploit machine-learning frameworks to define advanced Neural-Networks.</p>
-<p>GPUs and Google’s TPUs are now supported too!</p>
-<p>Update now and try the new examples!</p>
+<div class=pb-1>
+<strong>Authors:</strong> Sidhartha Dash, Luca Gravina, Filippo Vicentini, Michel Ferrero, Antoine Georges
+</div>
+<div class="d-flex flex-wrap pb-3"><p class="mb-0 me-3"><strong>Year: </strong> 2024</p><p class=mb-0><strong>Cite: </strong> <a href=https://www.doi2bib.org/bib/10.48550/arxiv.2402.01565>BibTex</a> </p></div>
+<div class="d-flex flex-wrap">
+<a class="mb-1 me-3 btn btn-primary" href=https://arxiv.org/abs/2402.01565>
+<strong>ArXiV:</strong> 2402.01565
+</a><p class="mb-1 me-3 btn btn-success"><strong>Made with NetKet: </strong>✅</p>
+</div>
+<article class="blog-post justify-content-center pt-5">
+<strong>Abstract:</strong>
+<p>Neural quantum state (NQS) ansätze have shown promise in variational Monte Carlo algorithms by their theoretical capability of representing any quantum state.
+However, the reason behind the practical improvement in their performance with an increase in the number of parameters is not fully understood.
+In this work, we systematically study the efficiency of restricted Boltzmann Machines (RBMs) to repre- sent the ground states in different phases of the spin-1 bilinear-biquadratic model, as the hidden layer density α increases.
+We train our ansatz by minimizing two different loss functions: 1) energy, and 2) infidelity of the NQS ansatz w.r.t. that of the exact ground state.
+We observe that the accuracy of our ansatz saturates with α in both cases.
+We demonstrate that this can be explained by looking at the spectrum of the quantum geometric tensor (QGT). We find that the rank of the QGT saturates be- yond a certain α, and we emphasize that it corresponds to the dimension of the relevant manifold for an optimized NQS.
+This provides a useful diagnostics for the practical representation power of an NQS ansatz.</p>
 <footer>
 </footer>
 </article>

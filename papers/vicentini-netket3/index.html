@@ -20,8 +20,8 @@
 <link rel=stylesheet href=/css/hero.css>
 <link rel=stylesheet href=/css/keyfeatures.css>
 <link rel=stylesheet href=/css/panels.css>
-<title>NetKet 3 ❤️ Jax - NetKet</title>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"NetKet 3 ❤️ Jax","mainEntityOfPage":{"@type":"WebPage","@id":"\/posts\/01-welcome\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"posts","wordcount":58,"url":"\/posts\/01-welcome\/","datePublished":"2021-08-23T00:00:00\u002b00:00","dateModified":"2021-08-23T00:00:00\u002b00:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini"},"description":""}</script>
+<title>NetKet 3: Machine Learning Toolbox for Many-Body Quantum Systems - NetKet</title>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"NetKet 3: Machine Learning Toolbox for Many-Body Quantum Systems","mainEntityOfPage":{"@type":"WebPage","@id":"\/papers\/vicentini-netket3\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"papers","wordcount":145,"url":"\/papers\/vicentini-netket3\/","datePublished":"2022-08-24T00:00:00\u002b00:00","dateModified":"2022-08-24T00:00:00\u002b00:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini and Giuseppe Carleo"},"description":""}</script>
 </head>
 <body>
 <nav class="navbar navbar-top navbar-expand-md fixed-top bd-navbar flex-md navbar-dark bg-light">
@@ -86,9 +86,8 @@ API Reference
 <div class="bg-full jumbotron container col-xxl-12 px-4 py-2">
 <div class="row flex-lg-row align-items-center g-1 pt-4 pb-4">
 <div class="col-12 pt-1 pr-0 mr-0">
-<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">NetKet 3 ❤️ Jax</p><div class="blog-post-date text-secondary">
-<time datetime=2021-08-23>Aug 23, 2021</time>
-<span rel=author>Filippo Vicentini</span>
+<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">NetKet 3: Machine Learning Toolbox for Many-Body Quantum Systems</p><div class="blog-post-date text-secondary">
+<time datetime=2022-08-24>Aug 24, 2022</time>
 </div>
 </div>
 </div>
@@ -96,10 +95,20 @@ API Reference
 </div>
 <div class="row justify-content-center">
 <div class="col col-sm-8">
-<article class="blog-post justify-content-center">
-<p>18 months in development, NetKet 3.0 indicates a major new step for the NetKet project. NetKet has been totally rewritten in Python and is now a Jax-based library. This guarantees outstanding performance while allowing researchers to exploit machine-learning frameworks to define advanced Neural-Networks.</p>
-<p>GPUs and Google’s TPUs are now supported too!</p>
-<p>Update now and try the new examples!</p>
+<div class=pb-1>
+<strong>Authors:</strong> Filippo Vicentini, Damian Hofmann, Attila Szabó, Dian Wu, Christopher Roth, Clemens Giuliani, Gabriel Pescia, Jannes Nys, Vladimir Vargas-Calderón, Nikita Astrakhantsev, Giuseppe Carleo
+</div>
+<div class="d-flex flex-wrap pb-3"><p class="mb-0 me-3"><strong>Journal:</strong> <a href=https://doi.org/10.21468/scipostphyscodeb.7>SciPost Physics Codebases</a> </p><p class="mb-0 me-3"><strong>Year: </strong> 2022</p><p class=mb-0><strong>Cite: </strong> <a href=https://www.doi2bib.org/bib/10.21468/scipostphyscodeb.7>BibTex</a> </p></div>
+<div class="d-flex flex-wrap">
+<a class="mb-1 me-3 btn btn-primary" href=https://arxiv.org/abs/2112.10526>
+<strong>ArXiV:</strong> 2112.10526
+</a><a class="mb-1 me-3 btn btn-info" href=https://github.com/netket/netket>
+<strong>Code:</strong> https://github.com/netket/netket
+</a><p class="mb-1 me-3 btn btn-success"><strong>Made with NetKet: </strong>✅</p>
+</div>
+<article class="blog-post justify-content-center pt-5">
+<strong>Abstract:</strong>
+<p>We introduce version 3 of NetKet, the machine learning toolbox for many-body quantum physics. NetKet is built around neural-network quantum states and provides efficient algorithms for their evaluation and optimization. This new version is built on top of JAX, a differentiable programming and accelerated linear algebra framework for the Python programming language. The most significant new feature is the possibility to define arbitrary neural network ansätze in pure Python code using the concise notation of machine-learning frameworks, which allows for just-in-time compilation as well as the implicit generation of gradients thanks to automatic differentiation. NetKet 3 also comes with support for GPU and TPU accelerators, advanced support for discrete symmetry groups, chunking to scale up to thousands of degrees of freedom, drivers for quantum dynamics applications, and improved modularity, allowing users to use only parts of the toolbox as a foundation for their own code.</p>
 <footer>
 </footer>
 </article>

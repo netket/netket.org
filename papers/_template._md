@@ -1,0 +1,17 @@
+---
+title: "title..."
+authors:
+    - First author
+    - Second author
+date: 2022-08-24 # date of first publication to arxiv
+arxiv: 2112.10526 # arxiv number
+netket: false # true/false if you used netket
+
+# journal: SciPost Physics Codebases  # only if already published, the full citation (with year)
+# doi: 10.21468/scipostphyscodeb.7    # only if published, the doi
+
+# repository: https://github.com/netket/netket   # only if accompanying code has been released, full url
+
+---
+
+Abstract... or short abstract...

@@ -20,8 +20,8 @@
 <link rel=stylesheet href=/css/hero.css>
 <link rel=stylesheet href=/css/keyfeatures.css>
 <link rel=stylesheet href=/css/panels.css>
-<title>NetKet 3 ❤️ Jax - NetKet</title>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"NetKet 3 ❤️ Jax","mainEntityOfPage":{"@type":"WebPage","@id":"\/posts\/01-welcome\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"posts","wordcount":58,"url":"\/posts\/01-welcome\/","datePublished":"2021-08-23T00:00:00\u002b00:00","dateModified":"2021-08-23T00:00:00\u002b00:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini"},"description":""}</script>
+<title>Unbiasing time-dependent Variational Monte Carlo by projected quantum evolution - NetKet</title>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Unbiasing time-dependent Variational Monte Carlo by projected quantum evolution","mainEntityOfPage":{"@type":"WebPage","@id":"\/papers\/sinibaldi-unbiasing\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"papers","wordcount":154,"url":"\/papers\/sinibaldi-unbiasing\/","datePublished":"2023-05-23T00:00:00\u002b00:00","dateModified":"2023-05-23T00:00:00\u002b00:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini and Giuseppe Carleo"},"description":""}</script>
 </head>
 <body>
 <nav class="navbar navbar-top navbar-expand-md fixed-top bd-navbar flex-md navbar-dark bg-light">
@@ -86,9 +86,8 @@ API Reference
 <div class="bg-full jumbotron container col-xxl-12 px-4 py-2">
 <div class="row flex-lg-row align-items-center g-1 pt-4 pb-4">
 <div class="col-12 pt-1 pr-0 mr-0">
-<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">NetKet 3 ❤️ Jax</p><div class="blog-post-date text-secondary">
-<time datetime=2021-08-23>Aug 23, 2021</time>
-<span rel=author>Filippo Vicentini</span>
+<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">Unbiasing time-dependent Variational Monte Carlo by projected quantum evolution</p><div class="blog-post-date text-secondary">
+<time datetime=2023-05-23>May 23, 2023</time>
 </div>
 </div>
 </div>
@@ -96,10 +95,20 @@ API Reference
 </div>
 <div class="row justify-content-center">
 <div class="col col-sm-8">
-<article class="blog-post justify-content-center">
-<p>18 months in development, NetKet 3.0 indicates a major new step for the NetKet project. NetKet has been totally rewritten in Python and is now a Jax-based library. This guarantees outstanding performance while allowing researchers to exploit machine-learning frameworks to define advanced Neural-Networks.</p>
-<p>GPUs and Google’s TPUs are now supported too!</p>
-<p>Update now and try the new examples!</p>
+<div class=pb-1>
+<strong>Authors:</strong> Alessandro Sinibaldi, Clemens Giuliani, Giuseppe Carleo, Filippo Vicentini
+</div>
+<div class="d-flex flex-wrap pb-3"><p class="mb-0 me-3"><strong>Journal:</strong> <a href=https://doi.org/10.22331/q-2023-10-10-1131>Quantum 7, 1131</a> </p><p class="mb-0 me-3"><strong>Year: </strong> 2023</p><p class=mb-0><strong>Cite: </strong> <a href=https://www.doi2bib.org/bib/10.22331/q-2023-10-10-1131>BibTex</a> </p></div>
+<div class="d-flex flex-wrap">
+<a class="mb-1 me-3 btn btn-primary" href=https://arxiv.org/abs/2305.14294>
+<strong>ArXiV:</strong> 2305.14294
+</a><a class="mb-1 me-3 btn btn-info" href=https://github.com/netket/netket_fidelity>
+<strong>Code:</strong> https://github.com/netket/netket_fidelity
+</a><p class="mb-1 me-3 btn btn-success"><strong>Made with NetKet: </strong>✅</p>
+</div>
+<article class="blog-post justify-content-center pt-5">
+<strong>Abstract:</strong>
+<p>We analyze the accuracy and sample complexity of variational Monte Carlo approaches to simulate the dynamics of many-body quantum systems classically. By systematically studying the relevant stochastic estimators, we are able to: (i) prove that the most used scheme, the time-dependent Variational Monte Carlo (tVMC), is affected by a systematic statistical bias or exponential sample complexity when the wave function contains some (possibly approximate) zeros, an important case for fermionic systems and quantum information protocols; (ii) show that a different scheme based on the solution of an optimization problem at each time step is free from such problems; (iii) improve the sample complexity of this latter approach by several orders of magnitude with respect to previous proofs of concept. Finally, we apply our advancements to study the high-entanglement phase in a protocol of non-Clifford unitary dynamics with local random measurements in 2D, first benchmarking on small spin lattices and then extending to large systems.</p>
 <footer>
 </footer>
 </article>

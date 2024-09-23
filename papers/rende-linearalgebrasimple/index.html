@@ -20,8 +20,8 @@
 <link rel=stylesheet href=/css/hero.css>
 <link rel=stylesheet href=/css/keyfeatures.css>
 <link rel=stylesheet href=/css/panels.css>
-<title>NetKet 3 ❤️ Jax - NetKet</title>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"NetKet 3 ❤️ Jax","mainEntityOfPage":{"@type":"WebPage","@id":"\/posts\/01-welcome\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"posts","wordcount":58,"url":"\/posts\/01-welcome\/","datePublished":"2021-08-23T00:00:00\u002b00:00","dateModified":"2021-08-23T00:00:00\u002b00:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini"},"description":""}</script>
+<title>A simple linear algebra identity to optimize large-scale neural network quantum states - NetKet</title>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"A simple linear algebra identity to optimize large-scale neural network quantum states","mainEntityOfPage":{"@type":"WebPage","@id":"\/papers\/rende-linearalgebrasimple\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"papers","wordcount":145,"url":"\/papers\/rende-linearalgebrasimple\/","datePublished":"2023-10-09T00:00:00\u002b00:00","dateModified":"2023-10-09T00:00:00\u002b00:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini and Giuseppe Carleo"},"description":""}</script>
 </head>
 <body>
 <nav class="navbar navbar-top navbar-expand-md fixed-top bd-navbar flex-md navbar-dark bg-light">
@@ -86,9 +86,8 @@ API Reference
 <div class="bg-full jumbotron container col-xxl-12 px-4 py-2">
 <div class="row flex-lg-row align-items-center g-1 pt-4 pb-4">
 <div class="col-12 pt-1 pr-0 mr-0">
-<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">NetKet 3 ❤️ Jax</p><div class="blog-post-date text-secondary">
-<time datetime=2021-08-23>Aug 23, 2021</time>
-<span rel=author>Filippo Vicentini</span>
+<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">A simple linear algebra identity to optimize large-scale neural network quantum states</p><div class="blog-post-date text-secondary">
+<time datetime=2023-10-09>Oct 9, 2023</time>
 </div>
 </div>
 </div>
@@ -96,10 +95,20 @@ API Reference
 </div>
 <div class="row justify-content-center">
 <div class="col col-sm-8">
-<article class="blog-post justify-content-center">
-<p>18 months in development, NetKet 3.0 indicates a major new step for the NetKet project. NetKet has been totally rewritten in Python and is now a Jax-based library. This guarantees outstanding performance while allowing researchers to exploit machine-learning frameworks to define advanced Neural-Networks.</p>
-<p>GPUs and Google’s TPUs are now supported too!</p>
-<p>Update now and try the new examples!</p>
+<div class=pb-1>
+<strong>Authors:</strong> Riccardo Rende, Luciano Viteritti, Lorenzo Bardone, Federico Becca, Sebastian Goldt
+</div>
+<div class="d-flex flex-wrap pb-3"><p class="mb-0 me-3"><strong>Journal:</strong> <a href=https://doi.org/10.1038/s42005-024-01732-4>Communication Physics 7, 260</a> </p><p class="mb-0 me-3"><strong>Year: </strong> 2023</p><p class=mb-0><strong>Cite: </strong> <a href=https://www.doi2bib.org/bib/10.1038/s42005-024-01732-4>BibTex</a> </p></div>
+<div class="d-flex flex-wrap">
+<a class="mb-1 me-3 btn btn-primary" href=https://arxiv.org/abs/2310.05715>
+<strong>ArXiV:</strong> 2310.05715
+</a><a class="mb-1 me-3 btn btn-info" href=https://github.com/netket/netket>
+<strong>Code:</strong> https://github.com/netket/netket
+</a><p class="mb-1 me-3 btn btn-success"><strong>Made with NetKet: </strong>✅</p>
+</div>
+<article class="blog-post justify-content-center pt-5">
+<strong>Abstract:</strong>
+<p>Neural-network architectures have been increasingly used to represent quantum many-body wave functions. These networks require a large number of variational parameters and are challenging to optimize using traditional methods, as gradient descent. Stochastic reconfiguration (SR) has been effective with a limited number of parameters, but becomes impractical beyond a few thousand parameters. Here, we leverage a simple linear algebra identity to show that SR can be employed even in the deep learning scenario. We demonstrate the effectiveness of our method by optimizing a Deep Transformer architecture with 300'000 parameters, achieving state-of-the-art ground-state energy in the J1–J2 Heisenberg model at J2/J1=0.5 on the 10×10 square lattice, a challenging benchmark in highly-frustrated magnetism. This work marks a significant step forward in the scalability and efficiency of SR for neural-network quantum states, making them a promising method to investigate unknown quantum phases of matter, where other methods struggle.</p>
 <footer>
 </footer>
 </article>
