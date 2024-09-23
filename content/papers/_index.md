@@ -10,7 +10,7 @@ hero:
   show: true
   show_news: true
   title: "Papers"
-  subtitle: "A list of papers published on Neural Quantum States, using NetKet or not (😢)."
+  subtitle: "A list of papers that used NetKet."
   logo: "logo/logo_transparent.png"
 
 ---

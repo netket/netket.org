@@ -11,7 +11,7 @@ journal: Quantum 7, 1131
 doi: 10.22331/q-2023-10-10-1131
 
 repository: https://github.com/netket/netket_fidelity
-netket: false
+netket: true
 
 ---
 

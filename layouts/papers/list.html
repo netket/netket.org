@@ -5,33 +5,37 @@
     {{ $truncate := default true .Site.Params.truncate }}
 
     <div class="row justify-content-center">
-            <div class="col col-sm-9">
-    {{ if .Content }}
-    <header>
-        <h1 class="blog-post-title">
-            <a class="text-dark text-decoration-none" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-        </h1>
-        <hr>
-    </header>
-    <section class="blog-post">
-        {{ .Content }}
-    </section>
-    {{ end }}
+        <div class="col col-sm-9">
+            <p>
+                If your paper or preprint uses NetKet, feel free to open a PR at the <a href="https://github.com/netket/netket.org/new/master/content/papers"> netket/netket.org</a> repository adding it. You just need to create a file that looks like  <a href="https://github.com/netket/netket.org/tree/pv/papers/content/papers">this example</a>.
+            </p>
 
-    {{ $paginator := .Paginate .Pages }}
-    {{ range $sorted := $paginator.Pages.ByDate.Reverse }}
+            {{ if .Content }}
+            <header>
+                <h1 class="blog-post-title">
+                    <a class="text-dark text-decoration-none" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+                </h1>
+                <hr>
+            </header>
+            <section class="blog-post">
+                {{ .Content }}
+            </section>
+            {{ end }}
 
-        {{ if $truncate }}
-            {{ .Render "summary" }}
-        {{ else }}
-            {{ .Render "content" }}
-        {{ end }}
+            {{ $paginator := .Paginate .Pages }}
+            {{ range $sorted := $paginator.Pages.ByDate.Reverse }}
 
-    {{ end }}
+                {{ if $truncate }}
+                    {{ .Render "summary" }}
+                {{ else }}
+                    {{ .Render "content" }}
+                {{ end }}
 
-    {{ partial "paginator" . }}
-    </div>
-    </div>
+            {{ end }}
+
+            {{ partial "paginator" . }}
+            </div>
+        </div>
     </div>
 </div>
 {{ end }}
