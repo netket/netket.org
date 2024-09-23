@@ -33,15 +33,15 @@ text = "NetKet provides state-of-the-art Neural-Network Quantum states, and adva
 
 [[params.keyfeatures.features]]
 title = "Jax-powered"
-text = "Netket is based on Jax, therefore you can run on CPUs, GPUs and TPUs any Neural Network Architecture written in one of the several Jax Frameworks, such as [Flax](https://flax.readthedocs.io/) or [Haiku](https://github.com/deepmind/dm-haiku)."
+text = "Netket is based on Jax, therefore you can run on CPUs, GPUs and TPUs, using Sharding or MPI to distribute among multiple nodes."
 
 [[params.keyfeatures.features]]
 title = "Interoperable"
 text = "NetKet can easily interoperate with other tools such as [OpenFermion](https://quantumai.google/openfermion) or [QuTiP](https://qutip.org/)."
 
 [[params.keyfeatures.features]]
-title = "Ground-State"
-text = "NetKet allows you to easily find the ground state or simulate the dynamics of a quantum system."
+title = "Multi-framework"
+text = "NetKet's built in models are implemented using [Flax](https://flax.readthedocs.io/), but it is also compatible with [Equinox](https://docs.kidger.site/equinox/), [Haiku](https://github.com/deepmind/dm-haiku) and can be made compatible with future frameworks."
 
 [[params.keyfeatures.features]]
 title = "Easy to use"
