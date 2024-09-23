@@ -1,0 +1,59 @@
+<!-- layout/posts/summary.html -->
+<!-- <article class="blog-post">
+    <header>
+        {{ partial "post-title" . }}
+        {{ partial "post-date" . }}
+        {{ partial "post-tags" . }}
+        {{ partial "post-categories" . }}
+    </header>
+    <div class="blog-post-content">
+        {{- .Summary -}}
+        {{- if .Truncated -}}
+            ...
+            <p></p>
+            <a href="{{ .RelPermalink }}">Read More...</a>
+        {{- end -}}
+    </div>
+</article> -->
+<div class="card mb-3">
+    <div class="card-body mb-0">
+        <h4 class="card-title">
+            <a class="text-dark text-decoration-none" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>        
+        </h4>
+        <div class="pb-1">
+        <strong>Authors:</strong> {{ range $index, $element := .Params.authors }}{{ if $index }}, {{ end }}{{ $element }}{{ end }}
+        </div>
+        
+        <div class="d-flex flex-wrap pb-0">
+            {{- if .Params.journal -}}
+                {{- if .Params.doi -}}
+                    <p class="mb-0 me-3"><strong>Journal:</strong> <a href="https://doi.org/{{ .Params.doi }}">{{ .Params.journal }}</a> </p>
+                    {{- else -}}
+                    <p class="mb-0 me-3"><strong>Journal:</strong> {{ .Params.journal }}</p>
+                {{- end -}}
+            {{- end -}}
+            <p class="mb-0 me-3"><strong>Year: </strong> {{ .Params.date.Format "2006" }}</p>
+            {{- if .Params.doi -}}
+                <p class="mb-0 me-3"><strong>Cite: </strong> <a href="https://www.doi2bib.org/bib/{{ .Params.doi }}">BibTex</a> </p>
+            {{- else -}}
+                <p class="mb-0 me-3"><strong>Cite: </strong> <a href="https://www.doi2bib.org/bib/10.48550/arxiv.{{ .Params.arxiv }}">BibTex</a> </p>
+            {{- end -}}
+            {{- if .Params.arxiv -}}
+                <p class="mb-0 me-3"><strong>ArXiV:</strong> <a href="https://arxiv.org/abs/{{ .Params.arxiv }}">{{ .Params.arxiv }}</a> </p>
+            {{- end -}}
+            {{- if .Params.repository -}}
+                <p class="mb-0 me-3"><strong>Code: </strong> <a href="{{ .Params.repository }}">Link to Repository</a></p>
+
+            {{- end -}}
+        </div>
+
+        <!--
+        <p class="card-text">
+            <small>{{ .Summary }}
+            </small>
+        </p>
+        -->
+    </div>
+</div>
+
+<!-- \ layout/posts/summary.html -->

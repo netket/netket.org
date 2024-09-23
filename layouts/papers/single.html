@@ -1,0 +1,55 @@
+{{ define "main" }}
+<div class="container">
+    {{- partial "top-area-blog" . -}}
+    <!-- END TOP AREA -->
+    <div class="row justify-content-center">
+        <div class="col col-sm-8">
+
+            <div class="pb-1">
+                <strong>Authors:</strong> {{ range $index, $element := .Params.authors }}{{ if $index }}, {{ end }}{{ $element }}{{ end }}
+            </div>
+
+            <div class="d-flex flex-wrap pb-3">
+                {{- if .Params.journal -}}
+                    {{- if .Params.doi -}}
+                        <p class="mb-0 me-3"><strong>Journal:</strong> <a href="https://doi.org/{{ .Params.doi }}">{{ .Params.journal }}</a> </p>
+                        {{- else -}}
+                        <p class="mb-0 me-3"><strong>Journal:</strong> {{ .Params.journal }}</p>
+                    {{- end -}}
+                {{- end -}}
+                <p class="mb-0 me-3"><strong>Year: </strong> {{ .Params.date.Format "2006" }}</p>
+                {{- if .Params.doi -}}
+                    <p class="mb-0"><strong>Cite: </strong> <a href="https://www.doi2bib.org/bib/{{ .Params.doi }}">BibTex</a> </p>
+                {{- else -}}
+                    <p class="mb-0"><strong>Cite: </strong> <a href="https://www.doi2bib.org/bib/10.48550/arxiv.{{ .Params.arxiv }}">BibTex</a> </p>
+                {{- end -}}
+            </div>
+
+            <div class="d-flex flex-wrap">
+                <a class="mb-1 me-3 btn btn-primary" href="https://arxiv.org/abs/{{ .Params.arxiv }}">
+                    <strong>ArXiV:</strong> {{ .Params.arxiv }}
+                </a>
+                {{- if .Params.repository -}}
+                    <a class="mb-1 me-3 btn btn-info" href="{{ .Params.repository }}">
+                        <strong>Code:</strong> {{ .Params.repository }}
+                    </a>
+                {{- end -}}
+                <p class="mb-1 me-3 btn {{if .Params.netket}}btn-success{{else}}btn-success{{end}}"><strong>Made with NetKet: </strong> 
+                    {{- if .Params.netket -}}
+                    ✅
+                    {{- else -}}
+                    ❌
+                    {{- end -}}
+                </p>
+            </div>
+
+            <article class="blog-post justify-content-center pt-5">
+                <strong>Abstract:</strong>
+                {{ .Content }}
+
+                {{ partial "related" . }}
+            </article>
+        </div>
+    </div>
+</div>
+{{ end }}
