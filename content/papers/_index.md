@@ -10,7 +10,7 @@ hero:
   show: true
   show_news: true
   title: "Papers"
-  subtitle: "A list of papers that used NetKet."
+  subtitle: "A non-comprehensive list of some papers that used NetKet."
   logo: "logo/logo_transparent.png"
 
 ---
