@@ -26,11 +26,11 @@
             </div>
 
             <div class="d-flex flex-wrap">
-                <a class="mb-1 me-3 btn btn-primary" href="https://arxiv.org/abs/{{ .Params.arxiv }}">
+                <a class="mb-1 me-3 btn btn-primary" href="https://arxiv.org/abs/{{- .Params.arxiv -}}">
                     <strong>ArXiV:</strong> {{ .Params.arxiv }}
                 </a>
                 {{- if .Params.repository -}}
-                    <a class="mb-1 me-3 btn btn-info" href="{{ .Params.repository }}">
+                    <a class="mb-1 me-3 btn btn-info" href="{{- .Params.repository -}}">
                         <strong>Code:</strong> {{ .Params.repository }}
                     </a>
                 {{- end -}}

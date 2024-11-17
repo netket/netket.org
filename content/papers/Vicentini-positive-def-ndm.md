@@ -5,7 +5,7 @@ authors:
     - Riccardo Rossi
     - Giuseppe Carleo
 date: 2022-06-27 # date of first publication to arxiv
-arxiv: 2206.13488 # arxiv number
+arxiv: "2206.13488" # arxiv number
 netket: true # true/false if you used netket
 
 # journal: SciPost Physics Codebases  # only if already published, the full citation (with year)

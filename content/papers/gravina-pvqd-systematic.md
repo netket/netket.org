@@ -5,7 +5,7 @@ authors:
     - Vincenzo Savona
     - Filippo Vicentini
 date: 2024-10-14
-arxiv: 2410.10720
+arxiv: "2410.10720"
 # journal: 
 # doi: 
 

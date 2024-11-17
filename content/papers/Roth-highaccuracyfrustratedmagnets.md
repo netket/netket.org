@@ -5,7 +5,7 @@ authors:
     - Attila Szabó
     - Allan H. MacDonald
 date: 2022-11-14
-arxiv: 2211.07749
+arxiv: "2211.07749"
 journal: Phys. Rev. B 108, 054410
 doi: 10.1103/PhysRevB.108.054410
 

@@ -7,7 +7,7 @@ authors:
     - Michel Ferrero
     - Antoine Georges
 date: 2024-01-15
-arxiv: 2402.01565
+arxiv: "2402.01565"
 # journal: Quantum 7, 1131
 # doi: 10.22331/q-2023-10-10-1131
 

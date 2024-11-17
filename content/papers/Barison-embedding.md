@@ -5,7 +5,7 @@ authors:
     - Filippo Vicentini
     - Giuseppe Carleo
 date: 2023-09-15
-arxiv: 2309.08666
+arxiv: "2309.08666"
 # journal: Quantum 8, 1358
 #doi: 10.22331/q-2024-05-23-1358
 

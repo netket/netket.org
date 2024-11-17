@@ -5,7 +5,7 @@ authors:
     - Yannic Rath
     - George H. Booth
 date: 2024-01-15
-arxiv: 2306.05917
+arxiv: "2306.05917"
 journal: 	Quantum 8, 1245
 doi: 10.22331/q-2024-02-08-1245
 

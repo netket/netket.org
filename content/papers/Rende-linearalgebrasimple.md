@@ -7,7 +7,7 @@ authors:
     - Federico Becca
     - Sebastian Goldt
 date: 2023-10-09
-arxiv: 2310.05715
+arxiv: "2310.05715"
 journal: Communication Physics 7, 260
 doi: 10.1038/s42005-024-01732-4
 

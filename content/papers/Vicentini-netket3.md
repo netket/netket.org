@@ -15,7 +15,7 @@ authors:
 date: 2022-08-24
 journal: SciPost Physics Codebases
 doi: 10.21468/scipostphyscodeb.7
-arxiv: 2112.10526
+arxiv: "2112.10526"
 
 repository: https://github.com/netket/netket
 netket: true
