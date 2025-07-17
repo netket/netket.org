@@ -20,8 +20,8 @@
 <link rel=stylesheet href=/css/hero.css>
 <link rel=stylesheet href=/css/keyfeatures.css>
 <link rel=stylesheet href=/css/panels.css>
-<title>NetKet-friendly Summer School in Toulouse - NetKet</title>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"NetKet-friendly Summer School in Toulouse","mainEntityOfPage":{"@type":"WebPage","@id":"\/posts\/02-toulouse\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"posts","wordcount":256,"url":"\/posts\/02-toulouse\/","datePublished":"2022-02-14T10:23:16\u002b01:00","dateModified":"2022-02-14T10:23:16\u002b01:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","description":""}</script>
+<title>Variational subspace methods and application to improving variational Monte Carlo dynamics - NetKet</title>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Variational subspace methods and application to improving variational Monte Carlo dynamics","mainEntityOfPage":{"@type":"WebPage","@id":"\/papers\/kahn-variational-subspace\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"papers","wordcount":118,"url":"\/papers\/kahn-variational-subspace\/","datePublished":"2025-07-15T00:00:00\u002b00:00","dateModified":"2025-07-15T00:00:00\u002b00:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","description":""}</script>
 </head>
 <body>
 <nav class="navbar navbar-top navbar-expand-md fixed-top bd-navbar flex-md navbar-dark bg-light">
@@ -81,8 +81,8 @@ Documentation
 <div class="bg-full jumbotron container col-xxl-12 px-4 py-2">
 <div class="row flex-lg-row align-items-center g-1 pt-4 pb-4">
 <div class="col-12 pt-1 pr-0 mr-0">
-<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">NetKet-friendly Summer School in Toulouse</p><div class="blog-post-date text-secondary">
-<time datetime=2022-02-14>Feb 14, 2022</time>
+<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">Variational subspace methods and application to improving variational Monte Carlo dynamics</p><div class="blog-post-date text-secondary">
+<time datetime=2025-07-15>Jul 15, 2025</time>
 </div>
 </div>
 </div>
@@ -90,31 +90,20 @@ Documentation
 </div>
 <div class="row justify-content-center">
 <div class="col col-sm-8">
-<article class="blog-post justify-content-center">
-<p>We are glad to advertise that our dear colleagues in Toulouse are organising a Summer school in April on Machine Learning techniques for Quantum Many-Body Physics.
-The school will feature several lectures and tutorials on NetKet.</p>
-<p>Below you can find the original announcement.</p>
-<h2 id=announcement>Announcement</h2>
-<p>Toulouse School on Machine Learning for Quantum Many-Body Physics</p>
-<p>that will take place in Toulouse, France (4th-8th April 2022).</p>
-<p>The school will take place in hybrid format (with both online and onsite students and lecturers).</p>
-<p>This school will be devoted to an introduction to machine learning in quantum many-body physics, supervised / unsupervised / reinforcement learning, various forms of neural networks and their applications in quantum state reconstruction, Variational Monte Carlo, study of ground-state and dynamics of quantum many-body systems etc.
-Lectures by experts will introduce the main concepts and methods, and hands-on tutorials will give the opportunity to put this knowledge into practice.</p>
-<p>Confirmed lecturers</p>
-<ul>
-<li>Giuseppe Carleo (EPF Lausanne)</li>
-<li>Stefanie Czischek (Waterloo)</li>
-<li>Mohamed Hibat-Allah (Vector Institute, Toronto & Perimeter Institute, Waterloo) (* online)</li>
-<li>Florian Marquardt (Max Planck & University of Erlangen-Nuremberg) (* online)</li>
-<li>Evert van Nieuwenburg (Niels Bohr Institute, Copenhagen)</li>
-<li>Filippo Vicentini (EPF Lausanne)</li>
-<li>More to come &mldr;</li>
-</ul>
-<p>Registration is now open (deadline for registration: 8th of March 2022). More information can be found on the following website:
-<a href=https://mlqmb.sciencesconf.org>https://mlqmb.sciencesconf.org</a></p>
-<p>We are very sorry for the late announcement of this school, as the uncertainties caused by the pandemics did not allow easy organisation tasks.
-This school is reloaded from a previously planned version in Spring 2020.</p>
-<p>The organizers: Fabien Alet, Sylvain Capponi</p>
+<div class=pb-1>
+<strong>Authors:</strong> Adrien Kahn, Luca Gravina, Filippo Vicentini
+</div>
+<div class="d-flex flex-wrap pb-3"><p class="mb-0 me-3"><strong>Year: </strong> 2025</p><p class=mb-0><strong>Cite: </strong> <a href=https://www.doi2bib.org/bib/10.48550/arxiv.2507.08930>BibTex</a> </p></div>
+<div class="d-flex flex-wrap">
+<a class="mb-1 me-3 btn btn-primary" href=https://arxiv.org/abs/2507.08930>
+<strong>ArXiV:</strong> 2507.08930
+</a><a class="mb-1 me-3 btn btn-info" href=https://github.com/NeuralQXLab/variational-subspace-methods>
+<strong>Code:</strong> https://github.com/NeuralQXLab/variational-subspace-methods
+</a><p class="mb-1 me-3 btn btn-success"><strong>Made with NetKet: </strong>✅</p>
+</div>
+<article class="blog-post justify-content-center pt-5">
+<strong>Abstract:</strong>
+<p>We present a formalism that allows for the direct manipulation and optimization of subspaces, circumventing the need to optimize individual states when using subspace methods. Using the determinant state mapping, we can naturally extend notions such as distance and energy to subspaces, as well as Monte Carlo estimators, recovering the excited states estimation method proposed by Pfau et al. As a practical application, we then introduce Bridge, a method that improves the performance of variational dynamics by extracting linear combinations of variational time-evolved states. We find that Bridge is both computationally inexpensive and capable of significantly mitigating the errors that arise from discretizing the dynamics, and can thus be systematically used as a post-processing tool for variational dynamics.</p>
 <footer>
 </footer>
 </article>

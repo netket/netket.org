@@ -20,9 +20,8 @@
 <link rel=stylesheet href=/css/hero.css>
 <link rel=stylesheet href=/css/keyfeatures.css>
 <link rel=stylesheet href=/css/panels.css>
-<link rel=stylesheet href=/css/installationWidget.css>
 <title>Get Started - NetKet</title>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Get Started","mainEntityOfPage":{"@type":"WebPage","@id":"\/get_started\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"page","wordcount":369,"url":"\/get_started\/","datePublished":"2022-02-01T18:02:27\u002b01:00","dateModified":"2022-02-01T18:02:27\u002b01:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini and Giuseppe Carleo"},"description":""}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Get Started","mainEntityOfPage":{"@type":"WebPage","@id":"\/get_started\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"page","wordcount":26,"url":"\/get_started\/","datePublished":"2022-02-01T18:02:27\u002b01:00","dateModified":"2022-02-01T18:02:27\u002b01:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","description":""}</script>
 </head>
 <body>
 <nav class="navbar navbar-top navbar-expand-md fixed-top bd-navbar flex-md navbar-dark bg-light">
@@ -59,13 +58,8 @@ Citing
 Documentation
 </a>
 </li>
-<li class="nav-item mx-auto">
-<a class=nav-link href=https://netket.readthedocs.io/en/latest/api/api.html>
-API Reference
-</a>
-</li>
 </ul>
-<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+<ul class="navbar-nav flex-row ml-md-auto justify-content-center justify-content-md-end">
 <li class=nav-item>
 <a class=nav-link aria-current=page href=http://www.github.com/netket/netket><i class="bi bi-github"></i></a>
 </li>
@@ -76,7 +70,7 @@ API Reference
 <a class=nav-link aria-current=page href=https://join.slack.com/t/mlquantum/shared_invite/zt-19wibmfdv-LLRI6i43wrLev6oQX0OfOw><i class="bi bi-slack"></i></a>
 </li>
 <li class=nav-item>
-<a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ms-md-3" href=/get_started>Get Started</a>
+<a class="btn btn-bd-download mb-3 mb-md-0 ms-md-3" href=/https:/netket.readthedocs.io>Get Started</a>
 </li></ul>
 </div>
 </div>
@@ -88,7 +82,7 @@ API Reference
 <div class="row flex-lg-row align-items-center g-2 pt-4 pb-4">
 <div class="col-12 col-lg-8 pt-1">
 <h1 class="h1 display-5 fw-bold lh-1 mb-3 hero-title">Get Started</h1>
-<p class="h2 lead hero-subtitle pr-2">In Few Easy steps!</p>
+<p class="h2 lead hero-subtitle pr-2">Head to our documentation!</p>
 <div class="d-grid gap-2 d-md-flex justify-content-md-start"></div>
 </div>
 <div class="col-0 col-lg-3 d-none d-lg-block mx-0 px-2 py-3"><img src=/logo/logo_transparent.png class="d-block img-fluid hero-logo" alt=NetKet loading=lazy></div>
@@ -140,148 +134,20 @@ NetKet 3 ❤️ Jax
 </div></div>
 <div class="row content justify-content-center">
 <div class="page-content col-lg-9 justify-content-center">
-<h1 id=quickstart-on-the-cloud>QuickStart on the Cloud</h1>
-<p>The simplest way to get started with NetKet is to use <a href="https://colab.research.google.com/?utm_source=scs-index">Google&rsquo;s Colab</a>, an online notebook environment with access to GPUs.
-If you have a google, account, simply head to <a href=https://netket.readthedocs.io/en/latest/>NetKet&rsquo;s documentation</a>, select the first tutorial, and click on the small rocket icon on the top navigation bar.
-This will launch the tutorial on an online environment that is ready to use.</p>
-<p>For example, you can simply click on this button and get started!
-The notebook will automatically install netket.</p>
-<p><a href=https://colab.research.google.com/github/PhilipVinc/NetKet-lectures/blob/master/01_intro.ipynb><img src=https://colab.research.google.com/assets/colab-badge.svg alt="Open in Colab"></a></p>
-<h1 id=local-installation>Local Installation</h1>
-<p>You can also install NetKet on your local computer following those instructions:</p>
-<details class="card dropdown mb-3">
-<summary class="summary-title card-header">Make sure you have Python 3.7 or higher installed on Mac or Linux<div class="summary-down docutils"><svg width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75.0 000 1.06l6.25 6.25a.75.75.0 001.06.0l6.25-6.25a.75.75.0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75.0 00-1.06.0z"/></svg>
-</div>
-<div class="summary-up docutils"><svg width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75.0 000-1.06l-6.25-6.25a.75.75.0 00-1.06.0l-6.25 6.25a.75.75.0 101.06 1.06L12 9.56l5.72 5.72a.75.75.0 001.06.0z"/></svg>
-</div>
-</summary>
-<div class="summary-content card-body docutils">
-<p class=card-text><p>If Python 3.7 is not available on your computer, don&rsquo;t despair!
-You can use <a href=https://github.com/pyenv/pyenv>pyenv</a> (the easiest way to install it is with the <a href=https://github.com/pyenv/pyenv-installer>pyenv installer</a> to install any Python version, or you can use Anaconda, even though the latter is not recommended if you plan on using MPI.</p>
-<p>Windows is not natively supported because Jax does not yet support it.
-However, if you use WSL (Windows Subsystem for Linux) NetKet will run smoothly.</p>
-</p>
-</div>
-</details>
-<details class="card dropdown mb-3">
-<summary class="summary-title card-header">If you plan to use MPI, make sure you have an up to date version of the <code>mpicc</code> compilers available on your path.<div class="summary-down docutils"><svg width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75.0 000 1.06l6.25 6.25a.75.75.0 001.06.0l6.25-6.25a.75.75.0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75.0 00-1.06.0z"/></svg>
-</div>
-<div class="summary-up docutils"><svg width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75.0 000-1.06l-6.25-6.25a.75.75.0 00-1.06.0l-6.25 6.25a.75.75.0 101.06 1.06L12 9.56l5.72 5.72a.75.75.0 001.06.0z"/></svg>
-</div>
-</summary>
-<div class="summary-content card-body docutils">
-<p class=card-text>When using MPI, we recommend not to use Anaconda unless it&rsquo;s for small experimentation on a laptop.
-This is due to a dependency of netket, mpi4jax. You can read more about the limitations on the <a href=https://mpi4jax.readthedocs.io/en/latest/installation.html%3E>mpi4jax documentation</a>.</p>
-</div>
-</details>
-<details class="card dropdown mb-3" open>
-<summary class="summary-title card-header">Use this widget below to find the best command to install NetKet.<div class="summary-down docutils"><svg width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75.0 000 1.06l6.25 6.25a.75.75.0 001.06.0l6.25-6.25a.75.75.0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75.0 00-1.06.0z"/></svg>
-</div>
-<div class="summary-up docutils"><svg width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75.0 000-1.06l-6.25-6.25a.75.75.0 00-1.06.0l-6.25 6.25a.75.75.0 101.06 1.06L12 9.56l5.72 5.72a.75.75.0 001.06.0z"/></svg>
-</div>
-</summary>
-<div class="summary-content card-body docutils">
-<p class=card-text><section class=installationWidget>
-<div class=container>
-<div><h1 class=main-heading>Quick Start Locally</h1>
-<p class=description><br>Select your preferences and run the install command.</p>
-</div>
-<div class="row flex">
-<div class=col-md-12>
-<div id=os class="row justify-content-around">
-<div class="col-md-3 title-block">
-<div class="option-text os-text">Your OS</div>
-</div>
-<div id=linux class="flex-fill option selected">
-<div class=option-text>Linux</div>
-</div>
-<div id=macos class="flex-fill option">
-<div class=option-text>MacOS</div>
-</div>
-<div id=windows class="flex-fill option">
-<div class=option-text>Windows</div>
-</div>
-</div>
-<div id=package class="row justify-content-around">
-<div class="col-md-3 title-block">
-<div class="option-text os-text">Pkg Manager</div>
-</div>
-<div id=pip class="flex-fill option selected">
-<div class=option-text>Pip</div>
-</div>
-<div id=source class="flex-fill option">
-<div class=option-text>Git Master</div>
-</div>
-</div>
-<div id=accellerator class="row justify-content-around">
-<div class="col-md-3 title-block">
-<div class="option-text os-text">Accellerator</div>
-</div>
-<div id=cpu class="flex-fill option accellerator selected">
-<div class=option-text>CPU</div>
-</div>
-<div id=gpu class="flex-fill option accellerator">
-<div class=option-text>CPU/GPU</div>
-</div>
-</div>
-<div id=extras class="row justify-content-around">
-<div class="col-md-3 title-block">
-<div class=option-text>Extras</div>
-</div>
-<div id=mpi class="flex-fill option extra-opt">
-<div class=option-text>MPI</div>
-</div>
-<div id=qutip class="flex-fill option extra-opt">
-<div class=option-text>QuTiP</div>
-</div>
-<div id=openfermion class="flex-fill option extra-opt">
-<div class=option-text>OpenFermion</div>
-</div>
-</div>
-<div class=row>
-<div class="col-md-3 title-block">
-<div class=option-text>Run this command</div>
-</div>
-<div class="command-container flex-fill">
-<div class="col-md-11 command-to-run"><pre id=command>conda install windows 3.7</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<p>If you have issues, check the <a href=https://netket.readthedocs.io/en/latest/docs/install.html>full documentation</a>.</p>
-</p>
-</div>
-</details>
-<details class="card dropdown mb-3">
-<summary class="summary-title card-header">Explore our <a href=https://netket.readthedocs.io/en/latest/tutorials/gs-ising.html>Tutorials</a> and check out our <a href=https://github.com/netket/netket/tree/master/Examples>Examples</a>. If you still have questions, get in touch with us!<div class="summary-down docutils"><svg width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75.0 000 1.06l6.25 6.25a.75.75.0 001.06.0l6.25-6.25a.75.75.0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75.0 00-1.06.0z"/></svg>
-</div>
-<div class="summary-up docutils"><svg width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75.0 000-1.06l-6.25-6.25a.75.75.0 00-1.06.0l-6.25 6.25a.75.75.0 101.06 1.06L12 9.56l5.72 5.72a.75.75.0 001.06.0z"/></svg>
-</div>
-</summary>
-<div class="summary-content card-body docutils">
-<p class=card-text><ul>
-<li>Tutorials are commented python notebooks.</li>
-<li>Examples are sample python files that can be run.</li>
-<li>If you still have questions, feel free to get in touch through our <a href=https://github.com/netket/netket/issues>GitHub Issues</a> or to <a href=https://github.com/netket/netket/discussions>start a discussion thread</a></li>
-<li>If you want to experiment with mpi, try running some examples with</li>
-</ul>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>mpirun <span style=color:#f92672>-</span>np2 python path<span style=color:#f92672>/</span>to<span style=color:#f92672>/</span>example<span style=color:#f92672>.</span>py
-</code></pre></div></p>
-</div>
-</details>
+<script>window.location.href="https://netket.readthedocs.io"</script>
+<h1 id=get-started-with-netket>Get Started with NetKet</h1>
+<p>For installation instructions, tutorials, and comprehensive documentation, please visit our official documentation at <a href=https://netket.readthedocs.io>netket.readthedocs.io</a>.</p>
+<p>You will be redirected automatically.</p>
 </div>
 </div>
 </div>
 </div>
 <footer class=footer>
 <div class=container>
-<p> © Copyright 2019-2024, The Netket authors - All rights reserved.</p>
+<p> © Copyright 2019-2025, The Netket authors - All rights reserved.</p>
 </div>
 </footer>
 <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js integrity=sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p crossorigin=anonymous></script>
 <script src=/js/main.js></script>
-<script src=/js/installationWidget.js></script>
 </body>
 </html>
