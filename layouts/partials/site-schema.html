@@ -4,10 +4,10 @@
   "@context": "http://schema.org",
   "@type": "WebSite",
   "url": "{{ .Site.BaseURL }}",
-  {{ if .Site.Author.name -}}
+  {{ if .Site.Params.author.name -}}
   "author": {
     "@type": "Person",
-    "name": "{{ .Site.Author.name }}"
+    "name": "{{ .Site.Params.author.name }}"
   },
   {{- end }}
   {{ if .Site.Params.description -}}
@@ -90,10 +90,10 @@
     "@type": "Person",
     "name": "{{ .Params.author }}"
   },
-  {{- else if .Site.Author.name -}}
+  {{- else if .Site.Params.author.name -}}
   "author": {
     "@type": "Person",
-    "name": "{{ .Site.Author.name }}"
+    "name": "{{ .Site.Params.author.name }}"
   },
   {{- end }}
   "description": "{{ .Description }}"

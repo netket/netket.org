@@ -21,7 +21,7 @@ logo = "logo/logonav.png"
 linksOnlyIcon = true
 
 [params.navbar.button]
-url = "get_started"
+url = "https://netket.readthedocs.io"
 text = "Get Started"
 
 [markup.goldmark.renderer]

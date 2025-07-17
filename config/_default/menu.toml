@@ -4,11 +4,6 @@
   url = "https://netket.readthedocs.io/en/latest/index.html"
   weight = 80
   
-[[main]]
-  identifier = "api"
-  name = "API Reference"
-  url = "https://netket.readthedocs.io/en/latest/api/api.html"
-  weight = 1000
 
 [[links]]
   identifier = 'github'
