@@ -9,7 +9,7 @@ arxiv: "2410.10720"
 # journal: 
 # doi: 
 
-# repository: https://github.com/
+repository: https://github.com/NeuralQXLab/ptvmc-systematic-study
 netket: true
 
 ---
