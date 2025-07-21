@@ -1,7 +1,7 @@
 [[main]]
   identifier = "documentation"
   name = "Documentation"
-  url = "https://netket.readthedocs.io/latest/index.html"
+  url = "https://netket.readthedocs.io/en/latest/index.html"
   weight = 80
   
 
