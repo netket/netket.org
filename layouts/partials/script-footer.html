@@ -6,5 +6,9 @@
 
 {{ if ( .HasShortcode "installationWidget" ) }}
 <!-- JS For the installation widget (should only load if widget is used) -->
-<script src="{{ "js/installationWidget.js" | relURL }}"></script> 
+<script src="{{ "js/installationWidget.js" | relURL }}"></script>
 {{ end }}
+
+<!-- GoatCounter analytics (privacy-friendly, no consent required) -->
+<script data-goatcounter="https://netket.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
