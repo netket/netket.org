@@ -44,5 +44,22 @@
     {{- end -}}
 </title>
 
+{{ if .Params.math }}
+<!-- MathJax for LaTeX math rendering -->
+<script>
+    MathJax = {
+        tex: {
+            inlineMath:  [['$', '$']],
+            displayMath: [['$$', '$$']],
+            processEscapes: true
+        },
+        options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+{{ end }}
+
 <!-- Page Schema (for robot indexing) -->
 {{ partial "site-schema.html" . }}
