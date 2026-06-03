@@ -1,7 +1,7 @@
 ---
 title: "NetKet 3.22 Highlights"
-date: 2026-05-27T00:00:00+01:00
-draft: true
+date: 2026-06-04T00:00:00+01:00
+draft: false
 author: Filippo Vicentini
 math: true
 ---
