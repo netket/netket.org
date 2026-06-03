@@ -1,0 +1,326 @@
+<!doctype html><!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3 crossorigin=anonymous>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel=stylesheet type=text/css>
+<link rel=apple-touch-icon sizes=180x180 href=/favicon/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon/favicon-16x16.png>
+<link rel=manifest href=/favicon/site.webmanifest>
+<link rel=mask-icon href=/favicon/safari-pinned-tab.svg color=#2c3e50>
+<meta name=msapplication-TileColor content="#2c3e50">
+<meta name=theme-color content="#2c3e50">
+<link rel=stylesheet href=/css/main.css>
+<link rel=stylesheet href=/css/navbar.css>
+<link rel=stylesheet href=/css/carousel.css>
+<link rel=stylesheet href=/css/hero.css>
+<link rel=stylesheet href=/css/keyfeatures.css>
+<link rel=stylesheet href=/css/panels.css>
+<title>NetKet 3.22 Highlights - NetKet</title>
+<script>MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']],processEscapes:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}}</script>
+<script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"NetKet 3.22 Highlights","mainEntityOfPage":{"@type":"WebPage","@id":"\/posts\/07-netket322\/"},"image":{"@type":"ImageObject","url":"\/logo\/logo_transparent_small.png","width":800,"height":600},"genre":"posts","wordcount":1773,"url":"\/posts\/07-netket322\/","datePublished":"2026-06-04T00:00:00\u002b01:00","dateModified":"2026-06-04T00:00:00\u002b01:00","license":"Copyright 2019-2022, The Netket authors - All rights reserved.","author":{"@type":"Person","name":"Filippo Vicentini"},"description":""}</script>
+</head>
+<body>
+<nav class="navbar navbar-top navbar-expand-md fixed-top bd-navbar flex-md navbar-dark bg-light">
+<div class=container>
+<a class="navbar-brand navbar-custom-brand" href=/.><img class="navbar-brand-logo d-inline-block align-center" src=/logo/logonav.png loading=lazy><div class="navbar-brand-text d-inline-block align-center">NetKet</div>
+</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse" id=navbarSupportedContent>
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item mx-auto">
+<a class=nav-link href=/posts/>
+Posts
+</a>
+</li>
+<li class="nav-item mx-auto">
+<a class=nav-link href=/papers/>
+Papers
+</a>
+</li>
+<li class="nav-item mx-auto">
+<a class=nav-link href=/get_involved/>
+Get Involved
+</a>
+</li>
+<li class="nav-item mx-auto">
+<a class=nav-link href=/cite/>
+Citing
+</a>
+</li>
+<li class="nav-item mx-auto">
+<a class=nav-link href=https://netket.readthedocs.io/en/latest/index.html>
+Documentation
+</a>
+</li>
+</ul>
+<ul class="navbar-nav flex-row ml-md-auto justify-content-center justify-content-md-end">
+<li class=nav-item>
+<a class=nav-link aria-current=page href=http://www.github.com/netket/netket><i class="bi bi-github"></i></a>
+</li>
+<li class=nav-item>
+<a class=nav-link aria-current=page href=https://twitter.com/netketorg><i class="bi bi-twitter"></i></a>
+</li>
+<li class=nav-item>
+<a class=nav-link aria-current=page href=https://join.slack.com/t/mlquantum/shared_invite/zt-19wibmfdv-LLRI6i43wrLev6oQX0OfOw><i class="bi bi-slack"></i></a>
+</li>
+<li class=nav-item>
+<a class="btn btn-bd-download mb-3 mb-md-0 ms-md-3" href=/https:/netket.readthedocs.io>Get Started</a>
+</li></ul>
+</div>
+</div>
+</nav>
+<div id=content-wrap class=pt-5>
+<div class=container>
+<div class=top-area>
+<div class="bg-full jumbotron container col-xxl-12 px-4 py-2">
+<div class="row flex-lg-row align-items-center g-1 pt-4 pb-4">
+<div class="col-12 pt-1 pr-0 mr-0">
+<p class="h1 display-5 fw-bold lh-1 mb-3 hero-blog-title">NetKet 3.22 Highlights</p><div class="blog-post-date text-secondary">
+<time datetime=2026-06-04>Jun 4, 2026</time>
+<span rel=author>Filippo Vicentini</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col col-sm-8">
+<article class="blog-post justify-content-center">
+<p>We are proud to announce the release of <strong>NetKet 3.22</strong>, which is a remarkably large release including a lot off new features arising from research done by Ph.D. students and Postdocs working with NetKet.
+In particular, we now have new MCMC convergence-diagnostic tools, multi-GPU SR solvers, richer symmetry utilities, and much more.</p>
+<p>We would like to highlight the following features, which are discussed below, but the (quite long) full list of changes is in the <a href=https://netket.readthedocs.io/en/latest/changelog.html>CHANGELOG</a>.</p>
+<ol>
+<li><a href=#mcmc-convergence-diagnostics>MCMC thermalisation and convergence diagnostics</a></li>
+<li><a href=#symmetry-toolkit-extensions>Symmetry toolkit extensions</a></li>
+<li><a href=#a-new-structured-callback-system>A new, structured callback system</a></li>
+<li><a href=#improvements-to-sr-and-linear-solvers>Improvements to SR and linear solvers</a></li>
+<li><a href=#delta-method-error-propagation-for-nonlinear-observables>Delta-method error propagation for nonlinear observables</a></li>
+<li><a href=#stable-observables>Stable observables</a></li>
+<li><a href=#embedoperator-for-composite-systems>EmbedOperator for composite systems</a></li>
+<li><a href=#logging-enhancements>Logging enhancements</a></li>
+</ol>
+<hr>
+<h2 id=mcmc-thermalisation-and-convergence-diagnostics>MCMC thermalisation and convergence diagnostics</h2>
+<p>Two common pain points with NetKet have long been the absence of a simple way to thermalise Markov Chains, and a simple way to verify if a MCMC integration is converged.</p>
+<p>NetKet 3.22 addresses this shortcoming by adding three new <em>high level</em> tools: <code>MCState.thermalise</code>, <code>MCState.check_mc_convergence</code> and <code>MCState.expect_to_precision</code>.
+Those are all built on top of a jax-compatible single-pass statistical accumulator <a href=https://netket.readthedocs.io/en/latest/api/_generated/stats/netket.stats.online_statistics.html><code>stats.online_statistics</code></a>, which computes the mean, variance, standard error, Gelman-Rubin $\hat{R}$, and integrated autocorrelation time $\tau_\text{corr}$ in a single streaming pass without storing raw samples.</p>
+<h3 id=mcstatethermalise--adaptive-chain-warm-up><code>MCState.thermalise</code> — adaptive chain warm-up</h3>
+<p><a href=https://netket.readthedocs.io/en/latest/api/_generated/vqs/netket.vqs.MCState.html#netket.vqs.MCState.thermalise><code>MCState.thermalise</code></a> advances the chains until they are well mixed according to the $\hat{R}$ indicator.
+If they fail to mix in a given budget, a warning is raised.</p>
+<p>This is useful when creating a new variational state with specific parameters, for example, after initialising from a known ansatz or setting parameters obtained elsewhere, in order to mix the randomly initialized chains.</p>
+<h3 id=mcstatecheck_mc_convergence--long-chain-diagnostic><code>MCState.check_mc_convergence</code> — long-chain diagnostic</h3>
+<p><a href=https://netket.readthedocs.io/en/latest/api/_generated/vqs/netket.vqs.MCState.html#netket.vqs.MCState.check_mc_convergence><code>MCState.check_mc_convergence</code></a> runs long Markov chains and reports $\hat{R}$ and $\tau_\text{corr}$, together with a recommended suggested <code>sweep_size</code>.
+You can optionally pass <code>plot=True</code> to get a diagnostic figure with trace plots and autocorrelation functions.</p>
+<p>As NetKet defaults to a <code>sweep_size=hilbert.size</code>, which is sometimes quite a large overestimate, this can be very useful to lower your sampling budget.</p>
+<p>Together, the two methods allow a clean post-optimisation workflow:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> netket <span style=color:#66d9ef>as</span> nk
+
+<span style=color:#75715e># Construct a variational state with specific parameters (not yet thermalised)</span>
+vstate <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>vqs<span style=color:#f92672>.</span>MCState(
+    sampler, model, n_samples<span style=color:#f92672>=</span><span style=color:#ae81ff>4096</span>,
+    variables<span style=color:#f92672>=</span>optimised_params,
+)
+
+<span style=color:#75715e># Warm up the chains until R_hat &lt; 1.05</span>
+vstate<span style=color:#f92672>.</span>thermalise(H)
+
+<span style=color:#75715e># Run a long diagnostic to confirm mixing and get tau_corr</span>
+result <span style=color:#f92672>=</span> vstate<span style=color:#f92672>.</span>check_mc_convergence(H, n_samples<span style=color:#f92672>=</span><span style=color:#ae81ff>50_000</span>)
+<span style=color:#75715e># R_hat = 1.001, tau_corr = 4.2, recommended sweep_size &gt;= 9</span>
+</code></pre></div><h3 id=mcstateexpect_to_precision--precise-expectation-values><code>MCState.expect_to_precision</code> — precise expectation values</h3>
+<p><a href=https://netket.readthedocs.io/en/latest/api/_generated/vqs/netket.vqs.MCState.html#netket.vqs.MCState.expect_to_precision><code>MCState.expect_to_precision(operator, [rtol/atol])</code></a> draws samples iteratively until the estimated standard error of $\langle O \rangle$ satisfies user-specified absolute (<code>atol</code>) and relative (<code>rtol</code>) tolerances:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>energy <span style=color:#f92672>=</span> vstate<span style=color:#f92672>.</span>expect_to_precision(H, rtol<span style=color:#f92672>=</span><span style=color:#ae81ff>1e-3</span>)
+<span style=color:#75715e># stopped after 32768 samples; σ/|E| = 8.7e-4</span>
+</code></pre></div><hr>
+<h2 id=symmetry-toolkit-extensions>Symmetry toolkit extensions</h2>
+<p>NetKet 3.22 adds several utilities that make it easier to work with symmetry groups and to build symmetry-projected states.
+For example, it&rsquo;s now extremely simple to iteratively simmetrize an NQS, even if it already is already partly simmetric.</p>
+<h3 id=spin-flip-symmetry>Spin-flip symmetry</h3>
+<p><a href=https://netket.readthedocs.io/en/latest/api/_generated/operator/netket._src.operator.spin_flip.SpinFlipOperator.html><code>netket.operator.SpinFlipOperator</code></a> represents the global spin-flip transformation on spin and spinful fermionic Hilbert spaces.
+<a href=https://netket.readthedocs.io/en/latest/api/_generated/symmetry/netket.symmetry.spin_flip_representation.html><code>netket.symmetry.spin_flip_representation</code></a> builds the corresponding even/odd parity-sector projectors:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>hi <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>hilbert<span style=color:#f92672>.</span>Spin(s<span style=color:#f92672>=</span><span style=color:#ae81ff>0.5</span>, N<span style=color:#f92672>=</span><span style=color:#ae81ff>10</span>)
+flip_rep <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>symmetry<span style=color:#f92672>.</span>spin_flip_representation(hi, parity<span style=color:#f92672>=+</span><span style=color:#ae81ff>1</span>)  <span style=color:#75715e># even sector</span>
+vstate_sym <span style=color:#f92672>=</span> flip_rep<span style=color:#f92672>.</span>project(vstate)
+</code></pre></div><h3 id=coset-filters-for-iterative-symmetrisation>Coset filters for iterative symmetrisation</h3>
+<p>One often wants to simmetrize a variational state that is already partly simmetrized. The typical example is a patched transformer which is invariant under patch translations but not sub-patch translations.</p>
+<p>The new <em>coset filter</em> infrastructure allows to &lsquo;complete&rsquo; the simmetrization of a partly simmetrized state.
+Given a subgroup $H&lt;G$ of a larger simmetry group $G$ (like patch-simmetries inside of translation simmetries), one can apply the coset filter $F_C$ (only $|G|/|H|$ additional terms) to reach the full $G$-symmetric sector:</p>
+<p>$$P_G(\rho) = F_C(\rho) \circ P_H(\rho|_H)$$</p>
+<p>Coset filters are obtained via <code>.coset_filter(sub_rep)</code> on a <code>TranslationRepresentation</code>.
+A typical use case is a patched ViT, which is already equivariant under inter-patch translations $T_2$ (stride = patch size) by construction. Only the $T_1/T_2$ coset — two forward passes — is needed to reach full $T_1$ symmetry:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>patch_size <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span>
+lattice <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>graph<span style=color:#f92672>.</span>Chain(L, pbc<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
+
+G <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>symmetry<span style=color:#f92672>.</span>canonical_representation(hi, lattice<span style=color:#f92672>.</span>translation_group())
+H <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>symmetry<span style=color:#f92672>.</span>canonical_representation(hi, lattice<span style=color:#f92672>.</span>translation_group(strides<span style=color:#f92672>=</span>patch_size))
+
+<span style=color:#75715e># A patched ViT is naturally H-invariant</span>
+vstate <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>vqs<span style=color:#f92672>.</span>MCState(sampler, PatchViT(), n_samples<span style=color:#f92672>=</span><span style=color:#ae81ff>4096</span>)
+
+<span style=color:#75715e># By applying the refinement operator we can make it G-invariant</span>
+C <span style=color:#f92672>=</span> G<span style=color:#f92672>.</span>coset_filter(H)
+Π₀ <span style=color:#f92672>=</span> C<span style=color:#f92672>.</span>projector_refinement(k<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>)
+vstate_sym <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>vqs<span style=color:#f92672>.</span>apply_operator(Π₀, vstate)
+</code></pre></div><h3 id=other-additions>Other additions</h3>
+<ul>
+<li><a href=https://netket.readthedocs.io/en/latest/api/_generated/symmetry/netket.symmetry.group.cyclic_group.html><code>netket.symmetry.group.cyclic_group</code></a> — convenience constructor for cyclic permutation groups.</li>
+<li><a href=https://netket.readthedocs.io/en/latest/api/_generated/graph/netket.graph.Lattice.html#netket.graph.Lattice.distances_euclidean><code>Lattice.distances_euclidean</code></a> — pairwise Euclidean distances between lattice sites with optional minimum-image convention.</li>
+<li><code>Lattice.translation_group(strides=...)</code> — construct translation subgroups directly.</li>
+<li><code>FiniteGroup.is_subgroup()</code> and <code>TranslationGroup.is_subgroup()</code> — check whether one group is a subgroup of another.</li>
+</ul>
+<hr>
+<h2 id=a-new-structured-callback-system>A new, structured callback system</h2>
+<p>Callbacks are used to <em>inject</em> custom code inside of a standard training loop. They are a simple, fast way to customize what happens during an optimization without writing a full fledged driver.
+In previous versions of NetKet, callbacks were functions (<code>__call__(step, log_data, driver)</code>) that were executed in a specific point of the driver, after computing the parameter update but before applying it.
+This worked for many use cases, but made it awkward to implement anything that needed to react at different phases of the optimisation loop — for example, logging metadata at the start of a run, accepting or rejecting optimization steps, or simmetrizing samples.</p>
+<p>NetKet 3.22 introduces a more flexible class-based system, largely inspired by Keras callbacks.
+Callbacks are now subclasses of <a href=https://netket.readthedocs.io/en/latest/api/_generated/callbacks/netket.callbacks.AbstractCallback.html><code>netket.callbacks.AbstractCallback</code></a>, which implement one or more of the following functions that are called at specific points of the optimization.
+By playing with different steps, it&rsquo;s now possible to check whether a condition is satisfied on <code>on_compute_update_end</code> and refuse a step, or it&rsquo;s possible to change samples before the gradient is computing by defining <code>on_compute_update_start</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>When it fires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>on_run_start</code></td>
+<td>once, before the first step</td>
+</tr>
+<tr>
+<td><code>on_step_start</code></td>
+<td>at the beginning of every step</td>
+</tr>
+<tr>
+<td><code>on_compute_update_start</code></td>
+<td>before the gradient/update is computed</td>
+</tr>
+<tr>
+<td><code>on_compute_update_end</code></td>
+<td>after the update is computed, <strong>before</strong> it is applied</td>
+</tr>
+<tr>
+<td><code>before_parameter_update</code></td>
+<td>just before parameters are updated</td>
+</tr>
+<tr>
+<td><code>on_step_end</code></td>
+<td>at the end of every step</td>
+</tr>
+<tr>
+<td><code>on_run_end</code></td>
+<td>once, after the last step</td>
+</tr>
+<tr>
+<td><code>on_run_error</code></td>
+<td>if an exception escapes the run loop</td>
+</tr>
+</tbody>
+</table>
+<p>Two additional control-flow mechanisms are available:</p>
+<ul>
+<li>A callback that returns <code>True</code> from <code>on_compute_update_end</code> <strong>rejects the current step</strong> and asks the driver to recompute it (useful for adaptive step-size logic).</li>
+<li>Any hook can raise <code>StopRun</code> to terminate training gracefully.</li>
+</ul>
+<p>Detailed documentation and examples are in the new
+<a href=https://netket.readthedocs.io/en/latest/api/callbacks.html>advanced callbacks guide</a>.
+Additionally, we provide two useful callbacks built on this system:</p>
+<p><a href=https://netket.readthedocs.io/en/latest/api/_generated/callbacks/netket.callbacks.AutoChunkSize.html><strong><code>AutoChunkSize</code></strong></a> — automatically tunes the <code>chunk_size</code> of the variational state during training to stay within GPU memory limits, without manual tuning:</p>
+<p><a href=https://netket.readthedocs.io/en/latest/api/_generated/callbacks/netket.callbacks.AutoSlurmRequeue.html><strong><code>AutoSlurmRequeue</code></strong></a> — detects the Slurm job&rsquo;s remaining time budget, checkpoints the current state, and requeues the job before the time limit is hit.</p>
+<hr>
+<h2 id=improvements-to-sr-and-linear-solvers>Improvements to SR and linear solvers</h2>
+<p>SR sometimes gives NaNs. After careful studies, we realised this is due to using <code>cholesky</code> as a linear system solver, which is unstable for very ill-defined matrices. However, using <code>pinv</code> always is not a viable choice because it&rsquo;s too expensive.
+Therefore we now default to:</p>
+<h3 id=cholesky_with_fallbackhttpsnetketreadthedocsioenlatestapi_generatedoptimnetketoptimizersolvercholesky_with_fallbackhtml---a-more-robust-default><a href=https://netket.readthedocs.io/en/latest/api/_generated/optim/netket.optimizer.solver.cholesky_with_fallback.html><code>cholesky_with_fallback</code></a> — a more robust default</h3>
+<p>This linear solver combines the best of both: it attempts Cholesky first, and if a NaN output is detected, performs the calculation again with <code>pinv_smooth</code>.</p>
+<p>A general combinator <a href=https://netket.readthedocs.io/en/latest/api/_generated/optim/netket.optimizer.solver.nan_fallback.html><code>nan_fallback</code></a> is also available for wrapping any pair of solvers.</p>
+<h3 id=solver-diagnostics>Solver diagnostics</h3>
+<p><a href=https://netket.readthedocs.io/en/latest/api/_generated/optim/netket.optimizer.solver.pinv_smooth.html><code>pinv_smooth</code></a> now returns a structured diagnostics dictionary as its second return value (previously <code>None</code>):
+Moreover, you can pass <code>return_eigvals=True</code> to <code>pinv_smooth</code> to also get the full eigenvalue array, which is useful for diagnosing ill-conditioning.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>x, info <span style=color:#f92672>=</span> solver(A, b)
+<span style=color:#75715e># info = {&#34;eval_min&#34;: 1e-6, &#34;eval_max&#34;: 3.2, &#34;rank&#34;: 512, &#34;cond_number&#34;: 3.2e6}</span>
+</code></pre></div><h3 id=distributed-dense-solvers-for-multi-gpu-sr>Distributed dense solvers for multi-GPU SR</h3>
+<p>Two new optional solvers, <a href=https://netket.readthedocs.io/en/latest/api/_generated/optim/netket.optimizer.solver.cholesky_distributed.html><code>cholesky_distributed</code></a> and <a href=https://netket.readthedocs.io/en/latest/api/_generated/optim/netket.optimizer.solver.pinv_smooth_distributed.html><code>pinv_smooth_distributed</code></a>, are backed by <a href=https://github.com/flatironinstitute/jaxmg><code>jaxmg</code></a> (by <a href=https://github.com/therooler>Roeland Wiersema</a>) and allow the SR/NTK matrix to remain <strong>sharded across devices</strong> during the solve, avoiding the all-gather that otherwise limits scaling to large sample counts and acting as an optional dependency that is most useful in that regime.</p>
+<h3 id=other-improvements>Other improvements</h3>
+<p><code>VMC_SR</code> with <code>on_the_fly=True</code> in NTK mode has been significantly improved to reduce GPU memory consumption and to support the new distributed solvers.</p>
+<hr>
+<h2 id=delta-method-error-propagation-for-nonlinear-observables>Delta-method error propagation for nonlinear observables</h2>
+<p>Some observables, such as the Rényi-2 entanglement entropy or the variance of the energy, are <strong>nonlinear</strong> functions of the Monte Carlo estimators.
+For these quantities, the standard formula $\sigma^2[\langle O \rangle] = \text{Var}[O_\text{loc}]/N$ is incorrect because error propagation must account for the covariance between the different local-estimator channels.</p>
+<p>NetKet 3.22 implements a system based on the <a href=https://en.wikipedia.org/wiki/Delta_method>delta method</a> to compute error estimations for arbitrary observables, and makes it very easy to define new observables this way.</p>
+<hr>
+<h2 id=stable-observables>Stable observables</h2>
+<p>The <code>netket.observable</code> module is now stable and gathers all high-level
+observables previously scattered under <code>netket.experimental.observable</code>.
+The old paths are deprecated and will be removed in a future release.</p>
+<p>The following observables are now available at their stable locations:</p>
+<ul>
+<li><a href=https://netket.readthedocs.io/en/latest/api/_generated/observable/netket.observable.Renyi2EntanglementEntropy.html><code>netket.observable.Renyi2EntanglementEntropy</code></a> — Rényi-2 entanglement entropy</li>
+<li><a href=https://netket.readthedocs.io/en/latest/api/_generated/observable/netket.observable.VarianceObservable.html><code>netket.observable.VarianceObservable</code></a> — variance of an arbitrary operator</li>
+<li><a href=https://netket.readthedocs.io/en/latest/api/_generated/observable/netket.observable.InfidelityOperator.html><code>netket.observable.InfidelityOperator</code></a> — infidelity between two states</li>
+<li><a href=https://netket.readthedocs.io/en/latest/api/_generated/observable/netket.observable.VScore.html><code>netket.observable.VScore</code></a> — the <a href=https://doi.org/10.1126/science.adg9774>V-score</a> $V = N_s \cdot \text{Var}(E) / E^2$, a dimensionless benchmark of ansatz quality comparable across system sizes and Hamiltonians, whose error bar is correctly computed via the delta-method machinery introduced in this release</li>
+</ul>
+<p>All of these observables implement the <code>local_estimators</code> dispatch, providing
+correct delta-method error estimates and full support for <code>expect_to_precision</code>.</p>
+<hr>
+<h2 id=embedoperator-for-composite-systems><code>EmbedOperator</code> for composite systems</h2>
+<p><a href=https://netket.readthedocs.io/en/latest/api/_generated/operator/netket.operator.EmbedOperator.html><code>netket.operator.EmbedOperator</code></a> embeds an operator acting on a sub-space into a larger <code>TensorHilbert</code> space:</p>
+<p>$$\hat{O}_\text{embed} = \mathbb{I}_0 \otimes \cdots \otimes \hat{O}_i \otimes \cdots \otimes \mathbb{I}_N$$</p>
+<p>This is heavily inspired by the same operation in qutip, and gives the canonical building block for Hamiltonians of composite systems.
+As an example, a Kondo-like model coupling itinerant fermions to localised spins can be written as:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>hi_el   <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>hilbert<span style=color:#f92672>.</span>SpinOrbitalFermions(n_orbitals<span style=color:#f92672>=</span><span style=color:#ae81ff>4</span>, n_fermions<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>)
+hi_spin <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>hilbert<span style=color:#f92672>.</span>Spin(s<span style=color:#f92672>=</span><span style=color:#ae81ff>0.5</span>, N<span style=color:#f92672>=</span><span style=color:#ae81ff>4</span>)
+hi      <span style=color:#f92672>=</span> nk<span style=color:#f92672>.</span>hilbert<span style=color:#f92672>.</span>TensorHilbert(hi_el, hi_spin)
+
+H_hop   <span style=color:#f92672>=</span> build_hopping_hamiltonian(hi_el)
+H_spin  <span style=color:#f92672>=</span> build_spin_hamiltonian(hi_spin)
+H_kondo <span style=color:#f92672>=</span> build_kondo_coupling(hi_el, hi_spin)
+
+H <span style=color:#f92672>=</span> (
+    nk<span style=color:#f92672>.</span>operator<span style=color:#f92672>.</span>EmbedOperator(H_hop, hi, <span style=color:#ae81ff>0</span>)
+    <span style=color:#f92672>+</span> nk<span style=color:#f92672>.</span>operator<span style=color:#f92672>.</span>EmbedOperator(H_spin, hi, <span style=color:#ae81ff>1</span>)
+    <span style=color:#f92672>+</span> H_kondo
+)
+</code></pre></div><hr>
+<h2 id=logging-enhancements>Logging enhancements</h2>
+<h3 id=mlflow-integration>MLflow integration</h3>
+<p>The new <a href=https://netket.readthedocs.io/en/latest/api/_generated/driver/netket.logging.MLFlowLog.html><code>netket.logging.MLFlowLog</code></a> logger streams metrics and optional model checkpoints to an <a href=https://mlflow.org>MLflow</a> tracking server, making it easy to track and compare runs through MLflow&rsquo;s UI.</p>
+<h3 id=saving-variational-states-with-savevariationalstate>Saving variational states with <code>SaveVariationalState</code></h3>
+<p>The new <a href=https://netket.readthedocs.io/en/latest/api/_generated/driver/netket.logging.SaveVariationalState.html><code>netket.logging.SaveVariationalState</code></a> callback saves the full variational state to disk at fixed intervals using the <a href=https://github.com/NeuralQXLab/nqxpack><code>nqxpack</code></a> package (optional dependency).
+Files are named <code>{root}_{step:05d}.nk</code> and can be reloaded with <code>nqxpack.load</code>.</p>
+<h3 id=jsonlog-append-mode><code>JsonLog</code> append mode</h3>
+<p><a href=https://netket.readthedocs.io/en/latest/api/_generated/driver/netket.logging.JsonLog.html><code>JsonLog</code></a> now supports <code>mode="append"</code>, which loads the existing log and continues from the last recorded step — making it much easier to resume a run without losing the history from previous segments.</p>
+<h3 id=wallclock-timestamps>Wallclock timestamps</h3>
+<p>All drivers now log a <code>wallclock</code> timestamp at every step.
+This makes it straightforward to produce wall-time learning curves, which are more informative than step-number curves when comparing different algorithms or hardware configurations.</p>
+<hr>
+<h2 id=acknowledgements>Acknowledgements</h2>
+<p>NetKet 3.22 is the result of contributions from many people.
+We thank all contributors, issue reporters, and users who provided feedback during the development cycle.</p>
+<p>The full list of changes, including bug fixes and deprecations, is available in the <a href=https://netket.readthedocs.io/en/latest/changelog.html>CHANGELOG</a>.</p>
+<footer>
+</footer>
+</article>
+</div>
+</div>
+</div>
+</div>
+<footer class=footer>
+<div class=container>
+<p> © Copyright 2019-2026, The Netket authors - All rights reserved.</p>
+</div>
+</footer>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js integrity=sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p crossorigin=anonymous></script>
+<script src=/js/main.js></script>
+<script data-goatcounter=https://netket.goatcounter.com/count async src=//gc.zgo.at/count.js></script>
+</body>
+</html>
